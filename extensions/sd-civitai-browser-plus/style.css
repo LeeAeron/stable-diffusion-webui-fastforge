@@ -1,0 +1,813 @@
+/* Card list HTML */
+.civmodellist {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.civmodellist figure {
+	margin: 6px;
+	transition: transform .3s ease-out, box-shadow 0.3s ease;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.civmodelcard {
+    position: relative;
+}
+
+.civmodelcard:hover {
+	transform: scale(1.1, 1.1);
+	position: relative;	
+	z-index: var(--layer-5);
+	box-shadow: 0px 0px 1px 3px whitesmoke;
+}
+
+.civmodelcardinstalled {
+	box-shadow: 0px 0px 1px 3px aquamarine;
+}
+
+.civmodelcardoutdated {
+	box-shadow: 0px 0px 1px 3px orange;
+}
+
+.civmodelcard:hover figcaption{
+	bottom: initial;
+	background-color: rgba(32, 32, 32, 0.9);
+}
+
+.civmodelcard img, .civmodelcard .video-bg {
+	width: 8em;
+	height: 12em;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.civmodelcard figcaption {
+	position: absolute;
+	bottom: 5px;
+	text-align: center;
+	width: 8em;
+	word-break: break-word;
+	background-color: rgba(32, 32, 32, 0.5);
+	color: white !important;
+}
+
+/* End of Card list HTML */
+
+#quicksettings0 > div{
+	max-width: None !important;
+	width: auto !important;
+}
+
+#togglesL{
+	margin-top: 3px;
+}
+
+#toggles{
+	margin-top: -10px;
+}
+
+#searchType > div {
+    gap: 0.5em;
+}
+
+#backToTopContainer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 150;
+    pointer-events: none;
+    margin: 20px 51px 20px 20px;
+}
+
+#backToTop {
+    margin: 0;
+    max-width: 60px;
+    min-width: unset;
+    z-index: 200;
+    pointer-events: auto;
+}
+
+#browserTab {
+    position: relative;
+}
+
+#browserTab > div {
+    gap: var(--layout-gap) !important;
+}
+
+#browserTab > div > #header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--neutral-950);
+    z-index: 60;
+}
+
+.acss-14flpmm .gap:has(#quicksettings0):first-child {
+    gap: var(--layout-gap);
+}
+
+#txt2img_seed > label > input{
+    height: unset !important;
+}
+
+#browserTab > div > #header, #browserTab > div > #header_off {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    margin-top: -15px;
+}
+
+#toggle1, #toggle2, #toggle3, #toggle4, #toggle4_api, #toggle5{
+	margin-top: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#civitai_update_toggles > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#civitai_update_toggles {
+    margin-top: calc(-1 * var(--layout-gap));
+    margin-bottom: var(--layout-gap);
+}
+
+#toggle1L, #toggle2L, #toggle3L, #toggle4L, #toggle4L_api, #toggle5L,
+#overwrite_toggle, #skip_hash_toggle, #do_html_gen {
+    display: flex;
+	justify-content: center;
+}
+
+#centerText, #searchType {
+    text-align: center;
+}
+
+#browserTab {
+    min-height: 650px;
+}
+
+#download_all_button {
+    max-height: 40px;
+    height: 40px;
+    align-self: end;
+    margin-bottom: 1px;
+}
+
+#searchBox > label > textarea {
+    padding-top: 11px !important;
+}
+
+#searchBox {
+    max-width: 800px;
+    align-self: center;
+}
+
+#baseMdl {
+    min-width: 100px !important;
+    max-width: 100px !important;
+}
+
+#spanWidth {
+    display: flex !important;
+    flex-direction: row;
+}
+
+#spanWidth > div {
+    flex-wrap: nowrap;
+}
+
+.gradio-container-3-32-0 .prose :last-child {
+    margin-bottom: auto !important;
+}
+
+.date-section {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.card-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#selected_tags {
+    text-align: center;
+}
+
+#pageBtn1, #pageBtn2 {
+    max-width: 120px !important;
+    min-width: 50px !important;
+}
+
+#pageSlider {
+    max-height: 44px;
+}
+
+#pageSlider > div:nth-child(2) {
+    max-height: 25px;
+}
+
+#pageBoxMobile {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pageBox {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    max-width: 950px !important;
+}
+
+#pageBox > div:first-child {
+    align-items: end;
+}
+
+#refreshBtn, #refreshBtnL {
+    align-self: end;
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    max-width: 42px !important;
+    min-width: 42px !important;
+    width: 42px !important;
+    padding: 0px !important;
+}
+
+#refreshBtn > img,
+#refreshBtnL > img {
+    margin: unset;
+}
+
+#searchRow {
+    max-width: 800px;
+    align-self: center;
+}
+
+#save_set_box {
+    display: flex;
+    justify-content: center;
+}
+
+#save_set_btn {
+    max-width: 220px !important;
+    min-width: 220px !important;
+    margin-bottom: -6px;
+    padding: 5px;
+    height: unset !important;
+    min-height: 35px !important;
+}
+
+#searchType > div:nth-child(3) {
+    justify-content: center;
+}
+
+.custom-checkbox {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    background: #111B;
+    border-radius: var(--checkbox-border-radius);
+    border: 1px solid #bbbbbb;
+    cursor: pointer;
+}
+
+.custom-checkbox:hover {
+    border-color: #ffffff;
+}
+
+.model-checkbox:checked + .custom-checkbox {
+    background-color: var(--checkbox-background-color-selected);
+    border-color: var(--checkbox-border-color-selected);
+    background-image: var(--checkbox-check);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.open-in-civitai {
+    font-size: 18pt;
+    color: var(--body-text-color);
+    display: flex;
+    justify-content: center;
+    margin-top: -12px;
+}
+
+#model_header:hover{
+    color: var(--link-text-color-hover);
+}
+
+.civitai-txt2img-btn:hover {
+    border-color: var(--button-secondary-border-color-hover);
+    background: var(--button-secondary-background-fill-hover);
+    color: var(--button-secondary-text-color-hover);
+}
+
+.civitai-txt2img-btn {
+    border-radius: var(--button-large-radius);
+    border: var(--button-border-width) solid var(--button-secondary-border-color);
+    padding: var(--button-large-padding);
+    font-weight: var(--button-large-text-weight);
+    font-size: var(--button-large-text-size);
+    background: var(--button-secondary-background-fill);
+    color: var(--button-secondary-text-color);
+}
+
+.civitai-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.civitai-tag,
+.civitai-meta,
+.civitai-meta-btn {
+    background-image: var(--button-secondary-background-fill);
+    border-radius: 8px;
+    padding: 4px 6px;
+    border: 1px solid var(--input-border-color);
+}
+
+.civitai-meta-btn:hover {
+    cursor: pointer;
+    background-image: var(--button-secondary-background-fill-hover);
+}
+
+#select_all_models_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#select_all_models {
+    max-width: 100px;
+    min-width: 100px;
+    min-height: 30px;
+    padding: 0px;
+    margin-top: -25px;
+}
+
+.civitai_dl_item,
+.civitai_dl_item_completed,
+.civitai_dl_item_failed {
+    background-color: var(--error-background-fill);
+    border-radius: 8px;
+    padding: 5px 0px;
+    border: 1px solid var(--input-border-color);
+    margin: 10px 0px;
+}
+
+.civitai_dl_item_failed > .dl_stat > .dl_progress_bar {
+    background-color: transparent !important;
+    padding: 0px 0px 2px 0px !important;
+}
+
+.dl_progress_bar {
+    background-color: var(--button-primary-border-color);
+    color: var(--body-text-color);
+    padding: 0px 0px 2px 5px;
+    border-radius: 8px;
+    transition: width 0.5s ease-in-out;
+}
+
+.dl_progress_bar::before,
+.dl_progress_bar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.civitai-btn-text:hover {
+    color: var(--link-text-color-hover);
+    cursor: pointer;
+}
+/* Customized Accordion Filter */
+
+#filterBox,
+#filterBoxL {
+    align-self: end;
+    height: 42px;
+    max-width: 42px;
+    padding: unset !important;
+    margin: 0px !important;
+    display: flex;
+    justify-content: center;
+}
+
+#filterBox {
+    background: var(--button-secondary-background-fill);
+}
+
+#filterBoxL {
+    background: var(--input-background-fill);
+}
+
+#filterBox:hover,
+#filterBoxL:hover {
+    background: var(--button-secondary-background-fill-hover);
+}
+
+#filterBox .label-wrap.open,
+#filterBoxL .label-wrap.open{
+    border-bottom: unset !important;
+    background: var(--button-secondary-background-fill-hover);
+    border-radius: 7px !important;
+    height: 40px;
+}
+
+#filterBox > div:nth-child(3),
+#filterBoxL > div:nth-child(3) {
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    width: 300px;
+    z-index: 100 !important;
+    margin-top: 55px;
+}
+
+.browser_tooltip {
+    box-shadow: var(--body-text-color) 0px 0px 2px 0px;
+    background: var(--background-fill-primary);
+    color: var(--body-text-color);
+    border-radius: 3px;
+    padding: 10px;
+    position: absolute;
+    z-index: 50;
+    margin-top: 30px;
+}
+
+#toggle4 > label > span, #toggle4L > label > span {
+    color: var(--neutral-400);
+}
+
+#filterBox > div:nth-child(3), #toggle4 > div:nth-child(3) {
+    background: var(--background-fill-primary);
+}
+
+#filterBoxL > div:nth-child(3), #toggle4L > div:nth-child(3) {
+    background: var(--neutral-950);
+}
+
+#filterBox > div:nth-child(2),
+#filterBoxL > div:nth-child(2) {
+    padding: 10px !important;
+}
+
+#filterBox .gradio-slider input[type="number"],
+#filterBoxL .gradio-slider input[type="number"] {
+    width: 70px !important;
+}
+
+#pageBox .gradio-slider input[type="number"] {
+    width: 5em !important;
+}
+
+#filterBox > div:nth-child(2) > span:nth-child(1),
+#filterBoxL > div:nth-child(2) > span:nth-child(1) {
+    display: none;
+}
+
+#filterBox > div:nth-child(2) > span:nth-child(2),
+#filterBoxL > div:nth-child(2) > span:nth-child(2) {
+    transform: rotate(0deg) !important;
+    transition: 0s !important;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    color: transparent;
+    overflow: hidden;
+}
+
+#filterBox > div:nth-child(2) > span:nth-child(2)::before,
+#filterBoxL > div:nth-child(2) > span:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 100%; 
+    height: 100%;
+}
+
+/* End of Custom Accordion */
+
+.card-button {
+    width: 42px !important;
+}
+
+.edit-button.card-button::before {
+    font-size: 90%;
+    vertical-align: top;
+}
+
+.copy-path-button.card-button::before {
+    font-size: 110%;
+}
+
+.copy-path-button.card-button {
+    margin-top: -4px;
+}
+
+.goto-civitbrowser.card-button {
+    filter: drop-shadow(2px 2px 3px black);
+    display: flex;
+    align-items: center;
+}
+
+.goto-civitbrowser.card-button:hover svg {
+    fill: red !important;
+}
+
+/* Custom settings Accordion */
+.settings-accordion {
+    border: 1px solid var(--block-border-color);
+    border-radius: 8px !important;
+    margin: 15px 0px 2px 0px;
+    padding: 8px 8px;
+}
+
+.flex-column-layout {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.sub-folder-button-container {
+    width: 100%;
+}
+
+.guide-button {
+    position: relative;
+    z-index: 1;
+}
+
+.plus-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+
+#accordionToggle {
+    width: 100%;
+    display: flex;
+    font-size: 12pt;
+    justify-content: space-between;
+}
+
+#selected_tags > div {
+    justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#civitai_preview_html .model-block {
+	box-shadow: 0px 0px 1px 3px var(--button-secondary-border-color);
+    border-radius: 10px;
+    padding: 1px 20px 10px;
+    margin-bottom: 20px;
+}
+
+#civitai_preview_html .model-block code {
+    white-space: pre-wrap;
+}
+
+#civitai_preview_html .model-block dl {
+    overflow-wrap: anywhere;
+}
+
+#civitai_preview_html .sampleimgs .model-block img,
+#civitai_preview_html .sampleimgs .model-block video {
+	padding-top: 1em;
+	max-width: 20em;
+	cursor: zoom-in;
+	transition: max-width 0.1s;
+}
+
+/* Preview Image zoom */
+#civitai_preview_html .zoom-radio {
+    display: none!important;
+}
+
+/* Style for when the image is clicked (radio button checked) */
+#civitai_preview_html .zoom-radio:checked + label > img,
+#civitai_preview_html .zoom-radio:checked + label > video {
+    max-width: 95vw;
+    max-height: 95vh;
+    padding-top: 0px;
+    cursor: zoom-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Higher than the overlay */
+    pointer-events: none; /* Allow clicks to penetrate through to the overlay for resetting */
+}
+
+/* Overlay for resetting zoomed state */
+#civitai_preview_html .zoom-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5); 
+    z-index: 999; /* Below the zoomed image */
+    cursor: zoom-out;
+}
+
+#civitai_preview_html .zoom-radio:checked + label + .zoom-overlay {
+    display: block;
+    pointer-events: all; /* Capture click events when displayed */
+}
+
+#civitai_preview_html .zoom-img-container {
+    min-width: 20em;
+}
+
+#civitai_preview_html .model-uploader {
+ 	border-bottom: 1px solid;
+    padding-bottom: 10px;
+ }
+
+#civitai_preview_html .model-description {
+    border-top: 1px solid;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    position: relative;
+    max-height: 400px;
+}
+
+#civitai_preview_html .model-description::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(to bottom, rgb(255 255 255 / 0%), var(--background-fill-primary));
+    z-index: 1;
+}
+
+.description-toggle-label {
+    cursor: pointer;
+}
+
+.description-toggle-checkbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.description-toggle-checkbox:checked + .model-description {
+    max-height: unset !important;
+    position: unset !important;
+}
+
+.model-description + .description-toggle-label::before {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.model-description + .description-toggle-label {
+    display: flex;
+    padding: 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+
+.description-toggle-checkbox:checked + .model-description + .description-toggle-label::before {
+    transform: rotate(-90deg);
+    margin-right: 10px;
+}
+
+.description-toggle-checkbox:checked + .model-description + .description-toggle-label::after {
+    content: "Show Less...";
+}
+
+.description-toggle-checkbox:not(:checked) + .model-description + .description-toggle-label::after {
+    content: "Show All...";
+}
+/*------------------------------------------*/
+/*End CSS accordion for toggling description*/
+
+/*Avatar CSS mostly copied from CivitAI, but 48px instead of 32px*/
+#civitai_preview_html .avatar {
+	user-select: none;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 48px;
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.31);
+    display: inline-block!important;
+    margin-left: 5px!important;
+    vertical-align: middle;
+}
+
+#civitai_preview_html .avatar img {
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-style: none;
+}
+
+#civitai_preview_html dt {
+    font-size: medium;
+    color: #80a6c8!important;
+}
+
+/*
+#civitai_preview_html dt {
+    font-size: medium;
+    color: #3966bb !important;
+}
+*/
+
+#civitai_preview_html dd {
+	padding: 0px 0px 10px 10px;
+}
+
+/*CSS accordion for toggling extra metadata*/
+/*-----------------------------------------*/
+#civitai_preview_html .accordionCheckbox {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+#civitai_preview_html .tabs {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#civitai_preview_html .tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-left: -15px;
+}
+
+#civitai_preview_html .tab-label {
+    display: flex;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: large;
+}
+
+/* Icon */
+#civitai_preview_html .tab-label::before {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+#civitai_preview_html .accordionCheckbox:checked + .tab-label::before {
+    transform: rotate(90deg);
+}
+
+#civitai_preview_html .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    transition: all 0.3s;
+}
+
+#civitai_preview_html .tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+#civitai_preview_html .accordionCheckbox:checked ~ .tab-content {
+    max-height: unset;
+    padding: 1em;
+}
+/*-----------------------------------------*/
+/*End CSS accordion for toggling extra metadata*/

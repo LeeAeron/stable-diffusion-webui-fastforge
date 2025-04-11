@@ -1,0 +1,225 @@
+#forge_couple_t2i, #forge_couple_i2i {
+    user-select: none;
+}
+
+.fc_enable>label {
+    height: 100%;
+}
+
+.fc_bsc .fc_placeholder {
+    flex-grow: 2;
+}
+
+.fc_adv {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fc_adv>div {
+    gap: 2em;
+    width: 100%;
+}
+
+.fc_adv .gradio-image {
+    width: 512px;
+    height: 512px;
+    margin: auto;
+    display: flex;
+}
+
+.fc_adv .fc_preview_img {
+    overflow: visible !important;
+}
+
+.fc_adv .fc_preview_img .image-container {
+    display: flex;
+}
+
+.fc_adv .fc_preview_img img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto !important;
+
+    background-image: none;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+}
+
+.fc_adv .fc_bg_btns {
+    min-width: unset !important;
+    left: calc(100% + 4px);
+    position: absolute;
+}
+
+.fc_bbox {
+    position: absolute;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.fc_row_btns {
+    position: absolute;
+    z-index: 500;
+    right: 4px;
+    top: -1em;
+}
+
+.fc_row_btns div {
+    width: auto !important;
+    min-width: unset !important;
+}
+
+.fc_row_btns button {
+    width: 2em !important;
+    height: 2em !important;
+    min-width: unset !important;
+}
+
+.fc_mapping {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    padding: 1em;
+    border-radius: 1em;
+    background: var(--panel-background-fill);
+}
+
+.fc_mapping table {
+    width: 100%;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.fc_mapping :is(th, td) {
+    padding: 4px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    border: 2px solid var(--table-border-color) !important;
+}
+
+.fc_mapping th {
+    text-align: center !important;
+}
+
+.fc_mapping_btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1em !important;
+}
+
+.fc_mapping_btns>button {
+    font-family: "Consolas";
+    border-radius: 0.5em !important;
+    margin: auto;
+}
+
+#forge_couple_t2i button.round-btn {
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+#forge_couple_i2i button.round-btn {
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+.fc_msk .gradio-image {
+    height: 512px;
+    margin: auto;
+    display: flex;
+}
+
+.fc_msk .gradio-image.fc_msk_canvas {
+    width: 100%;
+}
+
+.fc_msk .gradio-image.fc_msk_preview {
+    width: 512px;
+}
+
+.fc_msk .gradio-image div.empty {
+    margin: auto;
+}
+
+.fc_msk .gradio-image img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto !important;
+}
+
+.fc_msk .fc_mask_row {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: auto;
+    height: auto;
+    gap: 1em;
+    background: var(--border-color-accent);
+}
+
+.fc_msk .fc_mask_row.selected {
+    outline: 4px solid var(--button-primary-border-color);
+}
+
+.fc_msk .fc_mask_row input {
+    margin: auto;
+    border-radius: 0.5em;
+
+    border: var(--input-border-width) solid var(--input-border-color);
+    background: var(--input-background-fill);
+    color: var(--body-text-color);
+    font-weight: var(--input-text-weight);
+    font-size: var(--input-text-size);
+}
+
+.fc_msk .fc_mask_row img {
+    cursor: pointer;
+}
+
+.fc_msk .fc_mask_row button:not(.del) {
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    background: var(--input-background-fill);
+    border-radius: 0.5em;
+    font-weight: bold;
+}
+
+.fc_msk .fc_mask_row button.up {
+    top: 8%;
+}
+
+.fc_msk .fc_mask_row button.down {
+    bottom: 4%;
+    transform: rotate(180deg);
+}
+
+.fc_msk .fc_mask_row button.del {
+    width: 10%;
+    background: var(--input-background-fill);
+    border-radius: 0.5em;
+}
+
+.fc_msk h2 {
+    margin-top: 1em !important;
+}
+
+.fc_msk div.fc_masks {
+    background: var(--panel-background-fill);
+    padding: 0.5em 0em;
+    border-radius: 2em;
+}
+
+.fc_msk .fc_msk_uploads .gradio-image div.image-container {
+    margin: auto;
+}

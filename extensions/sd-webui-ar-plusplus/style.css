@@ -1,0 +1,49 @@
+#arsp__txt2img_container_aspect_ratio,
+#arsp__img2img_container_aspect_ratio {
+	gap: 5px !important;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+#arsp__txt2img_row_aspect_ratio,
+#arsp__txt2img_row_resolutions,
+#arsp__img2img_row_aspect_ratio,
+#arsp__img2img_row_resolutions {
+	gap: 8px;
+}
+
+#arsp__txt2img_row_aspect_ratio button,
+#arsp__txt2img_row_resolutions button,
+#arsp__img2img_row_aspect_ratio button,
+#arsp__img2img_row_resolutions button {
+	gap: 10px !important;
+	max-width: unset !important;
+}
+
+button#arsp__arc_lock_button,
+button#arsp__arc_mode_button,
+button#arsp__arc_switch_button,
+button#arsp__arc_show_info_button,
+button#arsp__arc_hide_info_button {
+	max-width: 40px !important;
+	min-width: unset !important;
+	padding: var(--size-0-5) var(--size-2) !important;
+}
+
+/* TODO: Use gradio instead if posible */
+#arsp__arc_ar_display_text {
+	height: 22px;
+	overflow: hidden !important;
+}
+
+/* Fix for Lobe theme */
+/* https://github.com/canisminor1990/sd-webui-lobe-theme/blob/d4c4a48e8025d32b202716d4ab8d806580752256/src/styles/components/button.ts */
+.hide.svelte-1ipelgc {
+	display: none !important;
+}
+.primary.svelte-1ipelgc {
+	background: var(--button-primary-background-fill) !important;
+}
+.secondary.svelte-1ipelgc {
+	background: var(--button-secondary-background-fill) !important;
+}

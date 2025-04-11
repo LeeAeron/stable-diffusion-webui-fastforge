@@ -33,11 +33,15 @@ torchsde==0.2.6
 transformers==4.46.1
 httpx==0.24.1
 pillow-avif-plugin==1.4.3
-diffusers==0.31.0
+diffusers==0.32.2
 gradio_rangeslider==0.0.6
 gradio_imageslider==0.0.20
 loadimg==0.1.2
 tqdm==4.66.1
-peft==0.13.2
+peft==0.14.0
 pydantic==2.8.2
 huggingface-hub==0.26.2
+controlnet-aux==0.0.9
+onnxruntime-gpu==1.21.0
+bitsandbytes==0.45.3
+ultralytics==8.3.40

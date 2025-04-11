@@ -1,0 +1,2 @@
+a girl
+Steps: 20, Sampler: [Forge] Flux Realistic, Schedule type: Simple, CFG scale: 1, Distilled CFG Scale: 3.5, Seed: 2128298794, Size: 672x1200, Model: FLUX.D-bnb-nf4-v2_AiO, Detail Daemon: "mode:both,amount:1,st:0.5,ed:0.5,bias:0.5,exp:1,st_offset:0,ed_offset:0,fade:0,smooth:0"

@@ -1,0 +1,523 @@
+[
+    {
+        "id": "164e0cf9-0a2e-11f0-95b5-342eb796275f",
+        "time": 1742985350,
+        "name": "",
+        "tags": [
+            {
+                "id": "1742985350596238661",
+                "value": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430 \u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "localValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430 \u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430 \u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ],
+                "isEnglish": 0,
+                "toLocal": false
+            }
+        ],
+        "prompt": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430 \u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430,"
+    },
+    {
+        "id": "e6b98b21-0a2e-11f0-a1aa-342eb796275f",
+        "time": 1742985700,
+        "name": "",
+        "tags": [
+            {
+                "id": "1742985700303319367",
+                "value": "girl",
+                "localValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ],
+                "isEnglish": 0,
+                "toLocal": false
+            }
+        ],
+        "prompt": "girl,"
+    },
+    {
+        "id": "071940e0-0a2f-11f0-82d1-342eb796275f",
+        "time": 1742985754,
+        "name": "",
+        "tags": [
+            {
+                "id": "1742985754598675393",
+                "value": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430 \u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "localValue": "",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430 \u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            }
+        ],
+        "prompt": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430 \u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430,"
+    },
+    {
+        "id": "6974f46d-0a2f-11f0-8e92-342eb796275f",
+        "time": 1742985919,
+        "name": "",
+        "tags": [
+            {
+                "id": "1742985919603994909",
+                "value": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "localValue": "",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            },
+            {
+                "id": "1742985919604654137",
+                "value": "\u0434\u0435\u0440\u0436\u0438\u044c \u043a\u043e\u0442\u0430 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445",
+                "localValue": "",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0440\u0436\u0438\u044c \u043a\u043e\u0442\u0430 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            }
+        ],
+        "prompt": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430,\u0434\u0435\u0440\u0436\u0438\u044c \u043a\u043e\u0442\u0430 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445,"
+    },
+    {
+        "id": "a12f7b17-0a2f-11f0-af2f-342eb796275f",
+        "time": 1742986013,
+        "name": "",
+        "tags": [
+            {
+                "id": "1742986013104137553",
+                "value": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "localValue": "",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            },
+            {
+                "id": "1742986013104995736",
+                "value": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043a\u043e\u0442\u0430 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445",
+                "localValue": "",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043a\u043e\u0442\u0430 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            }
+        ],
+        "prompt": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430,\u0434\u0435\u0440\u0436\u0438\u0442 \u043a\u043e\u0442\u0430 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445,"
+    },
+    {
+        "id": "d0002d68-0a2f-11f0-9675-342eb796275f",
+        "time": 1742986091,
+        "name": "",
+        "tags": [
+            {
+                "id": "174298609167792947",
+                "value": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "localValue": "",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            }
+        ],
+        "prompt": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430,"
+    },
+    {
+        "id": "dba441f4-0a2f-11f0-b6e7-342eb796275f",
+        "time": 1742986111,
+        "name": "",
+        "tags": [
+            {
+                "id": "174298609167792947",
+                "value": "girl",
+                "localValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ],
+                "isFavorite": false,
+                "isEnglish": 0,
+                "toLocal": false
+            }
+        ],
+        "prompt": "girl,"
+    },
+    {
+        "id": "e717f53a-0a2f-11f0-9d29-342eb796275f",
+        "time": 1742986130,
+        "name": "",
+        "tags": [
+            {
+                "id": "1742986130407754643",
+                "value": "girl",
+                "localValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "girl",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            },
+            {
+                "id": "1742986130407732168",
+                "value": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "localValue": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ],
+                "isEnglish": 0,
+                "toLocal": false,
+                "isFavorite": false
+            }
+        ],
+        "prompt": "girl,\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430,"
+    },
+    {
+        "id": "f86354d0-0a2f-11f0-b192-342eb796275f",
+        "time": 1742986159,
+        "name": "",
+        "tags": [
+            {
+                "id": "1742986130407754643",
+                "value": "girl",
+                "localValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "girl",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ],
+                "isEnglish": 1,
+                "toLocal": true
+            },
+            {
+                "id": "1742986130407732168",
+                "value": "holds a cat in his hands",
+                "localValue": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ],
+                "isEnglish": 0,
+                "toLocal": false,
+                "isFavorite": false
+            }
+        ],
+        "prompt": "girl,holds a cat in his hands,"
+    },
+    {
+        "id": "100d7bbc-0a30-11f0-810e-342eb796275f",
+        "time": 1742986199,
+        "name": "",
+        "tags": [
+            {
+                "id": "1742986593305469136",
+                "value": "girl",
+                "localValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "girl",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            },
+            {
+                "id": "1742986593306317209",
+                "value": "holds a cat in his hands",
+                "localValue": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043d\u0430 \u0440\u0443\u043a\u0430\u0445 \u043a\u043e\u0442\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "holds a cat in his hands",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            },
+            {
+                "id": "1742986593306678768",
+                "value": "\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e",
+                "localValue": "\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ],
+                "isFavorite": false
+            }
+        ],
+        "prompt": "girl,holds a cat in his hands,\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e,"
+    },
+    {
+        "id": "008105c9-0a31-11f0-ba7c-342eb796275f",
+        "time": 1742986602,
+        "name": "",
+        "tags": [
+            {
+                "id": "174300376391533356",
+                "value": "girl",
+                "localValue": "\u0434\u0435\u0432\u0443\u0448\u043a\u0430",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "girl",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            },
+            {
+                "id": "174300376391674498",
+                "value": "holds a cat in his hands",
+                "localValue": "\u0434\u0435\u0440\u0436\u0438\u0442 \u043a\u043e\u0448\u043a\u0443 \u0432 \u0440\u0443\u043a\u0430\u0445",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "holds a cat in his hands",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            },
+            {
+                "id": "1743003763916503744",
+                "value": "pleasant face",
+                "localValue": "\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "pleasant face",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            }
+        ],
+        "prompt": "girl,holds a cat in his hands,pleasant face,"
+    },
+    {
+        "id": "08dfa315-0a59-11f0-97e5-342eb796275f",
+        "time": 1743003796,
+        "name": "",
+        "tags": [
+            {
+                "id": "1743003796449951975",
+                "value": "\u043a\u0440\u043e\u043a\u043e\u0434\u0438\u043b \u0432 \u0432\u0430\u043d\u043d\u043e\u0439",
+                "localValue": "\u043a\u0440\u043e\u043a\u043e\u0434\u0438\u043b \u0432 \u0432\u0430\u043d\u043d\u043e\u0439",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "\u043a\u0440\u043e\u043a\u043e\u0434\u0438\u043b \u0432 \u0432\u0430\u043d\u043d\u043e\u0439",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ],
+                "isEnglish": 0,
+                "toLocal": false
+            }
+        ],
+        "prompt": "\u043a\u0440\u043e\u043a\u043e\u0434\u0438\u043b \u0432 \u0432\u0430\u043d\u043d\u043e\u0439,"
+    },
+    {
+        "id": "25cdce42-0a59-11f0-8705-342eb796275f",
+        "time": 1743003845,
+        "name": "",
+        "tags": [
+            {
+                "id": "174435999711438211",
+                "value": "crocodile in the bathroom",
+                "localValue": "\u043a\u0440\u043e\u043a\u043e\u0434\u0438\u043b \u0432 \u0432\u0430\u043d\u043d\u043e\u0439",
+                "disabled": false,
+                "type": "text",
+                "weightNum": 1,
+                "incWeight": 0,
+                "decWeight": 0,
+                "originalValue": "crocodile in the bathroom",
+                "isLora": false,
+                "loraExists": false,
+                "isLyco": false,
+                "lycoExists": false,
+                "isEmbedding": false,
+                "classes": [
+                    "prompt-tag-value"
+                ]
+            }
+        ],
+        "prompt": "crocodile in the bathroom,"
+    }
+]
