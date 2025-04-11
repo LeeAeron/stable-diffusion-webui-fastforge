@@ -12,8 +12,9 @@ I tried to save native simple structure of Forge and add more features, which wi
 
 # Installing Forge
 
-**Just use one-click installation package (with git and python included).**
-*** Download One-Click Package (CUDA 12.1 + Pytorch 2.3.1, will be downloaded at first time)***(https://github.com/LeeAeron/test.7z)
+**Just use one-click installation package (with git and python included, rest will be downloaded at first start, including pytorch and all needed modules)**
+
+[*** Download One-Click Package (CUDA 12.1 + Pytorch 2.3.1, will be downloaded at first time)***](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/releases/download/v1.01/stable-diffusion-webui-forge-custom-build_1.01.2025.04.11.7z)
 
 After you're downloaded archive, uncompress it, and use `update.bat` to update, and use `START.bat` to run.
 
