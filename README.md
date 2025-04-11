@@ -5,7 +5,7 @@ Specific changes compared to official Forge WebUI:
 - optimized for max performance on all systems, especially with low VRAM
 - added main .bat menu with additional options to change memory management profile, installing some models etc.
 - pre-installed and pre-configured useful extensions, including FLuxUtils v2, which work 'out-of-box'
-- re-configured main congigs and settings
+- re-configured main configs and settings
 - no memory overflow
 
 I tried to save native simple structure of Forge and add more features, which will work out-of-box, without additional setting them: 'just unpack, launch and work'.
@@ -20,7 +20,7 @@ After you're downloaded archive, uncompress it, and use `update.bat` to update, 
 
 In main menu you can see 9 steps:
 
-- 1 - launches Forge WebUI.
+- 1 - Launches Forge WebUI.
 - 2 - Menu for download upscale models.
 Script will download two separate models with Aria downloader and place it into their models folder.
 Also, there's possibility to download rest most popular upscale models-script will download zip and unpack it into aprpropriate modoels folders.
@@ -77,6 +77,6 @@ Also, there's possibility to download rest most popular upscale models-script wi
 # FluxTools v2 for Dummies: 
 [![Watch the video](https://img.youtube.com/vi/MHYSFBkF36s/hqdefault.jpg)](https://www.youtube.com/watch?v=MHYSFBkF36s)
 
-Very thanks to https://github.com/AcademiaSD for extension.
+Very thanks to @AcademiaSD for extension.
 
 Readme file, also changelog will be updated, and extended.
