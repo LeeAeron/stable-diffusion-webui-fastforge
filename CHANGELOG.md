@@ -1,7 +1,7 @@
-Changelog:
+#Changelog:
 
 #2025/04/11
-* release for Git
+* release for own Git repo
 * moved main menu and some files from START.bat to webui folder and webui-user.bat for availability for Git users
 * reworked python folder and requirements_versions, deleted some not not needed python modules
 * fixed FluxTools Redux work
@@ -90,11 +90,6 @@ Optionally, you can create HugginFace access token and place it into file webui\
 * some modules code optimization
 * added Physton prompt translator extension (https://github.com/Physton/sd-webui-prompt-all-in-one prompt) with option to download pretrained offline (facebook) model for it in MAIN MENU
 
-##### FORGE FLUX TOOLS (CONTROLNET) HOW-TO FOR DUMMIES: https://youtu.be/WdTrQchJRmU?si=HvM7pqsNIMm1LafR
-##### FORGE FLUX TOOLS (CONTROLNET) ORIGINA (NOT MODDED) GIT: https://github.com/AcademiaSD/sd-forge-fluxcontrolnet
-##### ALL ADDITIONAL ADETAILER MODELS, FLUX TOOLS (CONTROLNET) MODELS, FACEBOOK OFFLINE TRANSLATE MODELS PROVIDED FROM https://huggingface.co/LeeAeron
-##### NF4V2 MODEL PROVIDED FROM https://huggingface.co/lllyasviel/
-
 #2025/03/25
 * reworked start script, now it has own menu:
 *** ability to download two upscale models downloaded at first start from hugginface/LeeAeron (downloaded into models/DAT)
@@ -114,28 +109,26 @@ Optionally, you can create HugginFace access token and place it into file webui\
 * added Haoming02 sd-webui-prompt-format extension
 
 #2025/03/09
-* updated Forge Git sources 2025/03/09
+* updated Git sources 2025/03/09
 * reworked some Python modules and files
 * fixed ControlNet work for SD/SDXL/IL models (OpenPose etc.)
 * deleted some unneeded files
 
 #2025/03/01
-* updated Forge Git sources 2025/02/28
+* updated Git sources 2025/02/28
 * deleted RealESRGAN_x4plus, ScuNET, SwinIR_4x as useless
 * deleted duplicated embeddings for sd/xl (negative etc)
 * deleted some empty folders
 * fixed auto-setup VRAM lvl for profiles by default
 
 #2025/02/27
-Build reworked from zero due to some problems with Torch 2.6.0 and Forge sources
-
-* based on official stable build with CUDA 12.1 and Pytorch 2.3.1
-* included all last updates from Forge Git by 2025/02/27
+* forked from official Forge Git stable build with CUDA 12.1 and Pytorch 2.3.1
+* included all last updates from Git by 2025/02/27
 * added and enabled working xformers
 * enabled Cuda Stream, Cuda Malloc for engine
 * added Adetailer models (all that I found in inretnet) and replaced cached models to files itself, this make faster UI launch
 * added ADetailer 'Eyes' model
-* deleted nsfw / watermark checker code in diffusers Python module
+* deleted nsfw / watermark checker code in diffusers Python module (in Portable Version)
 * added img2img HiRes Fix. fully working version
 * added TeaCache
 * added 3D openPose Editor
@@ -147,5 +140,3 @@ Build reworked from zero due to some problems with Torch 2.6.0 and Forge sources
 * added some embeddings
 * unlocked deleted 'Flux Realistic' samplers with pre-integrated Google code for Flux.D / Flux.S models
 * re-linked all chanes to intermal webui_cache folder for clearer and better engine work
-* you can update Forge sources from official Forge Git with "git pull", Realistic Flux samplers will not dissapear
-

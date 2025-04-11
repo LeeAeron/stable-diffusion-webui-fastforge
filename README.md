@@ -66,4 +66,14 @@ Also, there's possibility to download rest most popular upscale models-script wi
 - https://github.com/brick2face/seamless-tile-inpainting
 - https://github.com/DenOfEquity/superPrompter-webUI
 
+# Additional models provided from:
+- NF4 v2: ttps://huggingface.co/lllyasviel
+- FluxTools fp8: https://huggingface.co/LeeAeron
+- FluxTools Canny GGUF: https://huggingface.co/second-state/FLUX.1-Canny-dev-GGUF
+- FluxTools Depth GGUF: https://huggingface.co/SporkySporkness/FLUX.1-Depth-dev-GGUF
+- FluxTools Fill GGUF: https://huggingface.co/YarvixPA/FLUX.1-Fill-dev-gguf
+
+# FluxTools v2 for Dummies: https://www.youtube.com/watch?v=MHYSFBkF36s
+Very thanks to https://github.com/AcademiaSD for extension.
+
 Readme file, also changelog will be updated, and extended.
