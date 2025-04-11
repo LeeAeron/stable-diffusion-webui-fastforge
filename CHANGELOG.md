@@ -12,6 +12,7 @@
 - some code fixes for downloaded models
 * some changes for webui-user.bat file
 * Memory Management profile now set to "Always Clear Memory" by default
+* deleted BiRefNet due to incompatible with new requiremets (dev updated to pytorch 2.5*)
 
 #2025/04/09
 * additional changes in main settings, UI conf, webui-user.bat files
