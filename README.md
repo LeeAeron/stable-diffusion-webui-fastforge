@@ -74,9 +74,4 @@ Also, there's possibility to download rest most popular upscale models-script wi
 - FluxTools Depth GGUF: https://huggingface.co/SporkySporkness/FLUX.1-Depth-dev-GGUF
 - FluxTools Fill GGUF: https://huggingface.co/YarvixPA/FLUX.1-Fill-dev-gguf
 
-# FluxTools v2 for Dummies: 
-[![Watch the video](https://img.youtube.com/vi/MHYSFBkF36s/hqdefault.jpg)](https://www.youtube.com/watch?v=MHYSFBkF36s)
-
-Very thanks to @AcademiaSD for extension.
-
 Readme file, also changelog will be updated, and extended.
