@@ -26,7 +26,7 @@ Script will download two separate models with Aria downloader and place it into 
 Also, there's possibility to download rest most popular upscale models-script will download zip and unpack it into aprpropriate modoels folders.
 - 3 - Menu for download and install pre-integrated aDetailer additional models.
 - 4 - Menu for download and install NF4v2 model (by lllyasviel)
-- 5 - Menu for download and install FLux VAE and Text Encoders (CLIPs)
+- 5 - Menu for download and install Flux VAE and Text Encoders (CLIPs)
 - 6 - Menu for download and install Flux models for pre-integrated FLuxTools: Canny, Fill, Deppth. [1]
 - 7 - Menu for download model for pre-integrated Prompt Translator (2Gb, Facebook offline model).
 - 8-  Menu for changing Memory optimization profile - specific profile for SD/SDXL/Flux/ALL profiles, pre-configured for low-VRAM PCs and for normal PCs.
@@ -34,7 +34,7 @@ Also, there's possibility to download rest most popular upscale models-script wi
 
 **NOTE: 
  - [1] For Redux you can use usual Flux models: NF4, fp8/fp16/Dev GGUF/Schnell/Schnell GGUF versions. For Canny, Depth and Fill you can use their fp8/fp16/Dev GGUF versions.
- - [2] 'Clear Always' clears memory with clearing GPU and RAM cach/scum, that hepls to prevent memory overflow while changing between lot of models and while batch upscaling.
+ - [2] 'Clear Always' clears memory with clearing GPU and RAM cache, that hepls to prevent memory overflow while changing between lot of models and while batch upscaling.
 
 [Changelog here](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/blob/main/CHANGELOG.md)
 

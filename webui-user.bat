@@ -900,6 +900,7 @@ set COMMANDLINE_ARGS=--skip-python-version-check ^
 --no-half-vae ^
 --precision half ^
 --upcast-sampling ^
+--no-hashing ^
 --disable-nan-check
 
 @REM UNCOMMENT FOLOWWING CODE (REPLACE COMMANDLINE_ARGS LINE WITH UNCOMMENTED CODE)AND SETUP EXTERNAL PATH FOR MODELS IF YOU HAVE THEM NOT INTERNALLY.
@@ -913,6 +914,7 @@ set COMMANDLINE_ARGS=--skip-python-version-check ^
 @REM --no-half-vae ^
 @REM --precision half ^
 @REM --upcast-sampling ^
+@REM --no-hashing ^
 @REM --disable-nan-check
 @REM --ckpt-dir D:/COMFY_UI/ComfyUI/models/checkpoints ^
 @REM --lora-dir D:/COMFY_UI/ComfyUI/models/loras ^
