@@ -21,12 +21,11 @@
 * deleted FluxTools module
 * deleted FreeU module
 * Integrated modules: 
-- https://github.com/altoiddealer/sd-webui-ar-plusplus, Aspect Ratio
-- https://github.com/AcademiaSD/sd-forge-fluxtools-v2, FluxTools v2, workable on LOW VRAM (tested with GTX1660Ti Mobile 6Gb + 64Gb RAM)
-- https://github.com/licyk/advanced_euler_sampler_extension, additional samplers
-- https://github.com/licyk/sd-webui-tcd-sampler, additional samplers
-- https://github.com/brick2face/seamless-tile-inpainting, seamless inpainting
-- https://github.com/zeittresor/sd-forge-fum, replacement for FreeU
+- Aspect Ratio
+- FluxTools v2, workable on LOW VRAM (tested with GTX1660Ti Mobile 6Gb + 64Gb RAM)
+- additional samplers
+- seamless inpainting
+- replacement for FreeU
 * small changes in START.bat menu:
 - deleted text_encoders_FP8.zip download option, due to no need now
 - added option (step (9)) to change MEMORY MANAGENT config: Native ForgeSD/Always Clear Memory (this helps to prevent VRAM/RAM overflow)
