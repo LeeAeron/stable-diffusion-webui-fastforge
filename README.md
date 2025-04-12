@@ -4,7 +4,7 @@ Custom build, optimized for performance.
 Specific changes compared to official Forge WebUI:
 - optimized for max performance on all systems, especially with low VRAM
 - added main .bat menu with additional options to change memory management profile, installing some models etc.
-- pre-installed and pre-configured useful extensions, including FLuxUtils v2, which work 'out-of-box'
+- pre-installed and pre-configured useful extensions, including FluxTools v2, which work 'out-of-box'
 - re-configured main configs and settings
 - no memory overflow
 
@@ -39,5 +39,18 @@ Also, there's possibility to download rest most popular upscale models-script wi
 [Changelog here](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/blob/main/CHANGELOG.md)
 
 [Additional repositories, used in build](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/blob/main/additional_repositories_inside.md)
+
+# Additional models available for download and install via .bat menu provided by:
+- Flux.1 Dev NF4 v2: https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4
+- Flux.1 Dev fp8: https://huggingface.co/datasets/LeeAeron/flux_controlnet
+- Flux.1 Dev VAE, CLIPS: https://huggingface.co/datasets/LeeAeron/flux_vae_encoders
+- Facebook offline translate model: https://huggingface.co/datasets/LeeAeron/offline_translate_model
+
+
+# FluxTools v2 for Dummies:
+
+[![Video Title](https://img.youtube.com/vi/MHYSFBkF36s/0.jpg)](https://www.youtube.com/watch?v=MHYSFBkF36s)
+
+Thanks for FluxTools v2 extension to https://github.com/AcademiaSD
 
 Readme file, also changelog will be updated, and extended.
