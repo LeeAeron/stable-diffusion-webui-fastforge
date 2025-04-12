@@ -27,7 +27,7 @@ Also, there's possibility to download rest most popular upscale models-script wi
 - 3 - Menu for download and install pre-integrated aDetailer additional models.
 - 4 - Menu for download and install NF4v2 model (by lllyasviel)
 - 5 - Menu for download and install Flux VAE and Text Encoders (CLIPs)
-- 6 - Menu for download and install Flux models for pre-integrated FluxTools: Canny, Fill, Deppth. [1]
+- 6 - Menu for download and install Flux models for pre-integrated FLuxTools: Canny, Fill, Deppth. [1]
 - 7 - Menu for download model for pre-integrated Prompt Translator (2Gb, Facebook offline model).
 - 8-  Menu for changing Memory optimization profile - specific profile for SD/SDXL/Flux/ALL profiles, pre-configured for low-VRAM PCs and for normal PCs.
 - 9 - Menu for changing Memory Clear profile: 'Pure Forge' or 'Clear Always'.  [2]
