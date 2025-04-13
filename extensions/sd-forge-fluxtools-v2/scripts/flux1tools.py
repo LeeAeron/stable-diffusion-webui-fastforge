@@ -267,11 +267,11 @@ class flux1tools(scripts.Script):
                 with gradio.Accordion("Outpaint Options", open=False):
                     # Sliders para controlar la expansión en cada dirección
                     with gradio.Row():
-                        fill_expand_up = gradio.Slider(label="Expand Up ↑", minimum=0, maximum=512, step=64, value=0)
-                        fill_expand_down = gradio.Slider(label="Expand Down ↓", minimum=0, maximum=512, step=64, value=0)
+                        fill_expand_up = gradio.Slider(label="Expand Up ↑", minimum=0, maximum=2048, step=64, value=0)
+                        fill_expand_down = gradio.Slider(label="Expand Down ↓", minimum=0, maximum=2048, step=64, value=0)
                     with gradio.Row():
-                        fill_expand_left = gradio.Slider(label="Expand Left ←", minimum=0, maximum=512, step=64, value=0)
-                        fill_expand_right = gradio.Slider(label="Expand Right →", minimum=0, maximum=512, step=64, value=0)
+                        fill_expand_left = gradio.Slider(label="Expand Left ←", minimum=0, maximum=2048, step=64, value=0)
+                        fill_expand_right = gradio.Slider(label="Expand Right →", minimum=0, maximum=2048, step=64, value=0)
                     
                     # Botón para aplicar expansión
                     with gradio.Row():
