@@ -1,5 +1,9 @@
 #Changelog:
 
+#2025/04/13
+- enlarged FluxTools Fill outpaint expand max size to 2048px all sides (top/bottom/left/right)
+- added some pre-confs into ui-config.json
+
 #2025/04/11
 * release for own Git repo
 * moved main menu and some files from START.bat to webui folder and webui-user.bat for availability for Git users
