@@ -4,6 +4,7 @@
 - enabled always show GPU Weights slider for SD/XL profiles (lowering weights helps while upscaling to great resolutions on LowRAM GPU)
 - enabled ClipSkip slider for XL profile
 - enlarged expand dimensions in Mosaic Outpaint extension
+- fixes with webui-user.bat encoding (that crashes menu)
 
 #2025/04/13
 - enlarged FluxTools Fill outpaint expand max size to 2048px all sides (top/bottom/left/right)

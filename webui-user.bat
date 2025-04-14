@@ -1,11 +1,9 @@
 @echo off
-
-:menu
+:main_menu
 cls
-echo ==================================================
-echo                   Forge SD MENU
-echo                 Build v2025/04/11
-echo ==================================================
+echo =============================================================
+echo                        Forge SD MENU
+echo =============================================================
 echo 1. Start Forge SD
 echo 2. Check and download upscale models
 echo 3. Check and download additional adetailer models
@@ -15,26 +13,23 @@ echo 6. Download Flux.D models for Flux ControlNet
 echo 7. Download model for Prompt Translate
 echo 8. Change RAM optimizations profile
 echo 9. Change Memory Clear profile
-echo ==================================================
-echo Forked, modified by li_aeron
-echo @li_aeron (Telegram)
-echo https://huggingface.co/LeeAeron
-echo https://github.com/LeeAeron/stable-diffusion-webui-forge
-echo ==================================================
+echo =============================================================
+echo Forked, modified by @li_aeron
+echo https://github.com/LeeAeron/stable-diffusion-webui-fastforge
+echo =============================================================
 set /p choice=Choose action 1-9:
-
 if "%choice%"=="1" goto start_forge
 if "%choice%"=="2" goto check_and_install_upscale_models
 if "%choice%"=="3" goto check_and_install_adetailer_models
 if "%choice%"=="4" goto download_fluxd_nf4_mn
 if "%choice%"=="5" goto download_fluxd_vae_menu
 if "%choice%"=="6" goto menu_controlnet
-if "%choice%"=="7" goto menu_prompt_translate_model
+if "%choice%"=="7" goto menu_offline_transl
 if "%choice%"=="8" goto ram_opt
-if "%choice%"=="9" goto ram_clear_profile
+if "%choice%"=="9" goto memory_managmnt_prfl
 echo Wrong choice. Please, try again.
 pause
-goto menu
+goto main_menu
 
 :check_and_install_upscale_models
 cls
@@ -48,12 +43,11 @@ echo 4. Download additional upscale models pack (3.3Gb) with Browser
 echo 5. Back
 echo ===========================
 set /p file_choice=Choose action 1-5:
-
 if "%file_choice%"=="1" goto check_and_install_4xFFHQDAT_models
 if "%file_choice%"=="2" goto check_and_install_4xSSDIRDAT_models
 if "%file_choice%"=="3" goto download_additional_upscale_models
 if "%file_choice%"=="4" goto open_with_browser_additional_upscale_models
-if "%file_choice%"=="5" goto menu
+if "%file_choice%"=="5" goto main_menu
 echo Wrong choice. please, try again.
 pause
 goto check_and_install_upscale_models
@@ -255,7 +249,7 @@ if not exist "%folder_path%\%file_name%" (
 echo OK.
 )
 pause
-goto menu
+goto main_menu
 
 :download_fluxd_nf4_mn
 cls
@@ -267,10 +261,9 @@ echo 2. Open/download in Browser
 echo 3. Back
 echo =============================
 set /p file_choice=Choose action 1-3: 
-
 if "%file_choice%"=="1" goto download_fluxd_nf4
 if "%file_choice%"=="2" goto download_fluxd_nf4_browser
-if "%file_choice%"=="3" goto menu
+if "%file_choice%"=="3" goto main_menu
 echo Wrong choice. please, try again.
 pause
 goto download_fluxd_nf4_mn
@@ -316,13 +309,12 @@ echo 5. Open HugginFace folder in Browser
 echo 6. Back
 echo ==================================
 set /p file_choice=Choose action 1-6: 
-
 if "%file_choice%"=="1" goto download_vae
 if "%file_choice%"=="2" goto download_clip1
 if "%file_choice%"=="3" goto download_clip1_detaled
 if "%file_choice%"=="4" goto download_clip2
 if "%file_choice%"=="5" goto download_vae_browser
-if "%file_choice%"=="6" goto menu
+if "%file_choice%"=="6" goto main_menu
 echo Wrong choice. please, try again.
 pause
 goto download_fluxd_vae_menu
@@ -429,11 +421,10 @@ echo Flux Schnell GGUF and Flux.1 Dev NF4.
 echo 2. For FluxTools Fill, Canny, Depth you can use fp8/fp16/GGUF.
 echo ==============================================================
 set /p file_choice=Choose action 1-4: 
-
 if "%file_choice%"=="1" goto flux_controlnet_canny_menu
 if "%file_choice%"=="2" goto flux_controlnet_depth_menu
 if "%file_choice%"=="3" goto flux_controlnet_f_menu
-if "%file_choice%"=="4" goto menu
+if "%file_choice%"=="4" goto main_menu
 echo Wrong choice. please, try again.
 pause
 goto menu_controlnet
@@ -448,7 +439,6 @@ echo 2. Open/download in Browser
 echo 3. Back
 echo ===========================
 set /p file_choice=Choose action 1-3: 
-
 if "%file_choice%"=="1" goto flux_controlnet_canny
 if "%file_choice%"=="2" goto flux_controlnet_canny_browser
 if "%file_choice%"=="3" goto menu_controlnet
@@ -495,7 +485,6 @@ echo 2. Open/download in Browser
 echo 3. Back
 echo ===========================
 set /p file_choice=Choose action 1-3: 
-
 if "%file_choice%"=="1" goto flux_controlnet_depth
 if "%file_choice%"=="2" goto flux_controlnet_depth_browser
 if "%file_choice%"=="3" goto menu_controlnet
@@ -542,7 +531,6 @@ echo 2. Open/download in Browser
 echo 3. Back
 echo ===========================
 set /p file_choice=Choose action 1-3: 
-
 if "%file_choice%"=="1" goto flux_controlnet_fil
 if "%file_choice%"=="2" goto flux_controlnet_fil_browser
 if "%file_choice%"=="3" goto menu_controlnet
@@ -579,7 +567,7 @@ start "" "%url%"
 pause
 goto flux_controlnet_f_menu
 
-:menu_prompt_translate_model
+:menu_offline_transl
 cls
 echo ==========================================
 echo   Facebook Prompt Offline Translate Model
@@ -589,13 +577,12 @@ echo 2. Dwonload Facebook offline model via Browser
 echo 3. Back to main menu
 echo ===========================
 set /p file_choice=Choose action 1-3: 
-
 if "%file_choice%"=="1" goto facebook_translate_download
 if "%file_choice%"=="2" goto facebook_translate_browser
-if "%file_choice%"=="3" goto menu
+if "%file_choice%"=="3" goto main_menu
 echo Wrong choice. please, try again.
 pause
-goto menu_prompt_translate_model
+goto menu_offline_transl
 
 :facebook_translate_download
 cls
@@ -620,7 +607,7 @@ if not exist "%folder_path%\%file_name%" (
 echo OK.
 )
 pause
-goto menu_prompt_translate_model
+goto menu_offline_transl
 
 :facebook_translate_browser
 cls
@@ -629,7 +616,7 @@ set "url=https://huggingface.co/datasets/LeeAeron/offline_translate_model/resolv
 start "" "%url%"
 )
 pause
-goto menu_prompt_translate_model
+goto menu_offline_transl
 
 :ram_opt
 cls
@@ -642,11 +629,10 @@ echo 3. Set profile with normal RAM and VRAM
 echo 4. Back to main menu
 echo ===========================
 set /p file_choice=Choose action 1-4: 
-
 if "%file_choice%"=="1" goto pure_forge
 if "%file_choice%"=="2" goto highram_lowvram
 if "%file_choice%"=="3" goto normal_ram_vram
-if "%file_choice%"=="4" goto menu
+if "%file_choice%"=="4" goto main_menu
 echo Wrong choice. please, try again.
 pause
 goto ram_opt
@@ -689,7 +675,6 @@ echo 2. Total VRAM - 2GB by default
 echo 3. Back
 echo ===========================
 set /p file_choice=Choose action 1-3:
-
 if "%file_choice%"=="1" goto totalvram_1
 if "%file_choice%"=="2" goto totalvram_2
 if "%file_choice%"=="3" goto ram_opt
@@ -707,7 +692,6 @@ echo 2. Total VRAM - 1GB FLUX Queue+CPU
 echo 3. Back
 echo ===========================
 set /p file_choice=Choose action 1-3:
-
 if "%file_choice%"=="1" goto async_cpu1
 if "%file_choice%"=="2" goto queue_cpu1
 if "%file_choice%"=="3" goto highram_lowvram
@@ -725,7 +709,6 @@ echo 2. Total VRAM - 2GB FLUX Queue+CPU
 echo 3. Back
 echo ===========================
 set /p file_choice=Choose action 1-3:
-
 if "%file_choice%"=="1" goto async_cpu2
 if "%file_choice%"=="2" goto queue_cpu2
 if "%file_choice%"=="3" goto highram_lowvram
@@ -789,7 +772,7 @@ if exist "%source_folder%\%file_name%" (
 pause
 goto totalvram_2
 
-:ram_clear_profile
+:memory_managmnt_prfl
 cls
 echo ===========================
 echo     Memory Clear profile
@@ -799,19 +782,23 @@ echo 2. Set Clear Always Memory
 echo 3. Back to main menu
 echo ===========================
 set /p file_choice=Choose action 1-3:
-
 if "%file_choice%"=="1" goto pure_forge_clear
 if "%file_choice%"=="2" goto always_cl
-if "%file_choice%"=="3" goto menu
-echo Wrong choice. please, try again.
+if "%file_choice%"=="3" goto main_menu
+if not "%file_choice%"=="1" if not "%file_choice%"=="2" if not "%file_choice%"=="3" (
+    echo Wrong choice. please, try again.
+    pause
+    goto memory_managmnt_prfl
+)
 pause
-goto ram_clear_profile
+goto memory_managmnt_prfl
 
 :pure_forge_clear
 cls
 set "file_name=memory_management.py"
 set "source_folder=.\ram_opt\memory_def_forge"
 set "destination_folder=.\backend"
+
 if exist "%source_folder%\%file_name%" (
     copy /y "%source_folder%\%file_name%" "%destination_folder%\%file_name%"
     echo Pure Forge Memory Management succesfully applied.
@@ -819,13 +806,14 @@ if exist "%source_folder%\%file_name%" (
     echo Profile absent.
 )
 pause
-goto ram_clear_profile
+goto memory_managmnt_prfl
 
 :always_cl
 cls
 set "file_name=memory_management.py"
 set "source_folder=.\ram_opt\memory_always_clear_all"
 set "destination_folder=.\backend"
+
 if exist "%source_folder%\%file_name%" (
     copy /y "%source_folder%\%file_name%" "%destination_folder%\%file_name%"
     echo Clear Always Memory succesfully applied.
@@ -833,7 +821,7 @@ if exist "%source_folder%\%file_name%" (
     echo Profile absent.
 )
 pause
-goto ram_clear_profile
+goto memory_managmnt_prfl
 
 :start_forge
 cls
@@ -842,7 +830,6 @@ echo Checking and installing additional repositories...
 set FILE_TO_CHECK=repositories\BLIP\requirements.txt
 set CLONE_FOLDER=repositories\BLIP
 set REPO_URL=https://github.com/salesforce/BLIP.git
-
 if exist "%FILE_TO_CHECK%" (
     echo Repo ok.
 ) else (
@@ -853,7 +840,6 @@ if exist "%FILE_TO_CHECK%" (
 set FILE_TO_CHECK=repositories\google_blockly_prototypes\forge\additional_samplers.pyz
 set CLONE_FOLDER=repositories\google_blockly_prototypes
 set REPO_URL=https://github.com/lllyasviel/google_blockly_prototypes.git
-
 if exist "%FILE_TO_CHECK%" (
     echo Repo ok.
 ) else (
@@ -864,7 +850,6 @@ if exist "%FILE_TO_CHECK%" (
 set FILE_TO_CHECK=repositories\huggingface_guess\huggingface_guess\model_list.py
 set CLONE_FOLDER=repositories\huggingface_guess
 set REPO_URL=https://github.com/lllyasviel/huggingface_guess.git
-
 if exist "%FILE_TO_CHECK%" (
     echo Repo ok.
 ) else (
@@ -875,7 +860,6 @@ if exist "%FILE_TO_CHECK%" (
 set FILE_TO_CHECK=repositories\stable-diffusion-webui-assets\css\sourcesanspro.css
 set CLONE_FOLDER=repositories\stable-diffusion-webui-assets
 set REPO_URL=https://github.com/AUTOMATIC1111/stable-diffusion-webui-assets.git
-
 if exist "%FILE_TO_CHECK%" (
     echo Repo ok.
 ) else (
@@ -887,7 +871,6 @@ set "HF_HOME=%cd%\.huggingface"
 set "HF_HOME=%cd%_cache\huggingface"
 set "XDG_CACHE_HOME=%cd%_cache"
 set "HF_DATASETS_CACHE=%cd%_cache\huggingface\datasets"
-
 set PYTHON=
 set GIT=
 set VENV_DIR=
@@ -899,12 +882,11 @@ set COMMANDLINE_ARGS=--skip-python-version-check ^
 --cuda-malloc ^
 --no-half-vae ^
 --precision half ^
---upcast-sampling ^
 --no-hashing ^
+--upcast-sampling ^
 --disable-nan-check
 
 @REM UNCOMMENT FOLOWWING CODE (REPLACE COMMANDLINE_ARGS LINE WITH UNCOMMENTED CODE)AND SETUP EXTERNAL PATH FOR MODELS IF YOU HAVE THEM NOT INTERNALLY.
-
 @REM set COMMANDLINE_ARGS=--skip-python-version-check ^
 @REM --skip-version-check ^
 @REM --skip-torch-cuda-test ^
@@ -913,8 +895,8 @@ set COMMANDLINE_ARGS=--skip-python-version-check ^
 @REM --cuda-malloc ^
 @REM --no-half-vae ^
 @REM --precision half ^
-@REM --upcast-sampling ^
 @REM --no-hashing ^
+@REM --upcast-sampling ^
 @REM --disable-nan-check
 @REM --ckpt-dir D:/COMFY_UI/ComfyUI/models/checkpoints ^
 @REM --lora-dir D:/COMFY_UI/ComfyUI/models/loras ^
@@ -935,7 +917,6 @@ set EXPORT COMMANDLINE_ARGS=
 @REM  --hypernetwork-dir %A1111_HOME%/models/hypernetworks ^
 @REM  --embeddings-dir %A1111_HOME%/embeddings ^
 @REM  --lora-dir %A1111_HOME%/models/Lora
-
 @REM ADDITIONAL KEYS:
 @REM  --always-offload-from-vram ^
 @REM  (This flag will make things slower but less risky)
@@ -993,5 +974,4 @@ set EXPORT COMMANDLINE_ARGS=
 @REM --clip-in-fp8-e5m2 ^
 @REM --clip-in-fp16 ^
 @REM --clip-in-fp32 ^
-
 call webui.bat
