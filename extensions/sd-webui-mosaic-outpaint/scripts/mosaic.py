@@ -80,7 +80,7 @@ def mos_ui():
                     stretch_area = gr.Slider(
                         label="Stretch %",
                         minimum=0.25,
-                        maximum=0.75,
+                        maximum=2.00,
                         step=0.05,
                         value=0.50,
                     )
@@ -102,14 +102,14 @@ def mos_ui():
                         expansion_X = gr.Slider(
                             label="Horizontal Expand %",
                             minimum=0.05,
-                            maximum=1.00,
+                            maximum=2.00,
                             step=0.05,
                             value=0.50,
                         )
                         expansion_Y = gr.Slider(
                             label="Vertical Expand %",
                             minimum=0.05,
-                            maximum=1.00,
+                            maximum=2.00,
                             step=0.05,
                             value=0.50,
                         )
@@ -125,14 +125,14 @@ def mos_ui():
                         steps_S = gr.Slider(
                             label="Short-Side Tile Count",
                             minimum=1,
-                            maximum=6,
+                            maximum=12,
                             step=1,
                             value=3,
                         )
                         steps_L = gr.Slider(
                             label="Long-Side Tile Count",
                             minimum=12,
-                            maximum=72,
+                            maximum=100,
                             step=12,
                             value=24,
                         )

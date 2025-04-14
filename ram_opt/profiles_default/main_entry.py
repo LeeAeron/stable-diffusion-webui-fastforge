@@ -342,9 +342,9 @@ def on_preset_change(preset=None):
             gr.update(visible=True),                                                    # ui_vae
             gr.update(visible=True, value=1),                                           # ui_clip_skip
             gr.update(visible=False, value='Automatic'),                                # ui_forge_unet_storage_dtype_options
-            gr.update(visible=False, value='Queue'),                                    # ui_forge_async_loading
-            gr.update(visible=False, value='CPU'),                                      # ui_forge_pin_shared_memory
-            gr.update(visible=False, value=total_vram - 1024),                          # ui_forge_inference_memory
+            gr.update(visible=True, value='Queue'),                                    # ui_forge_async_loading
+            gr.update(visible=True, value='CPU'),                                      # ui_forge_pin_shared_memory
+            gr.update(visible=True, value=total_vram - 1024),                          # ui_forge_inference_memory
             gr.update(value=getattr(shared.opts, "sd_t2i_width", 672)),                 # ui_txt2img_width
             gr.update(value=getattr(shared.opts, "sd_i2i_width", 672)),                 # ui_img2img_width
             gr.update(value=getattr(shared.opts, "sd_t2i_height", 1200)),                # ui_txt2img_height
@@ -369,8 +369,8 @@ def on_preset_change(preset=None):
             gr.update(visible=True),                                                    # ui_vae
             gr.update(visible=False, value=1),                                          # ui_clip_skip
             gr.update(visible=True, value='Automatic'),                                 # ui_forge_unet_storage_dtype_options
-            gr.update(visible=False, value='Queue'),                                    # ui_forge_async_loading
-            gr.update(visible=False, value='CPU'),                                      # ui_forge_pin_shared_memory
+            gr.update(visible=True, value='Queue'),                                    # ui_forge_async_loading
+            gr.update(visible=True, value='CPU'),                                      # ui_forge_pin_shared_memory
             gr.update(visible=True, value=model_mem),                                   # ui_forge_inference_memory
             gr.update(value=getattr(shared.opts, "xl_t2i_width", 672)),                 # ui_txt2img_width
             gr.update(value=getattr(shared.opts, "xl_i2i_width", 672)),                # ui_img2img_width
@@ -449,6 +449,7 @@ shared.options_templates.update(shared.options_section(('ui_sd', "UI defaults 's
     "sd_i2i_width":  shared.OptionInfo(640,  "img2img width",      gr.Slider, {"minimum": 64, "maximum": 2048, "step": 8}),
     "sd_i2i_height": shared.OptionInfo(640,  "img2img height",     gr.Slider, {"minimum": 64, "maximum": 2048, "step": 8}),
     "sd_i2i_cfg":    shared.OptionInfo(7,    "img2img CFG",        gr.Slider, {"minimum": 1,  "maximum": 30,   "step": 0.1}),
+    "sd_GPU_MB":     shared.OptionInfo(total_vram - 1024, "GPU Weights (MB)", gr.Slider, {"minimum": 0,  "maximum": total_vram,   "step": 1}),
 }))
 shared.options_templates.update(shared.options_section(('ui_xl', "UI defaults 'xl'", "ui"), {
     "xl_t2i_width":  shared.OptionInfo(672,  "txt2img width",      gr.Slider, {"minimum": 64, "maximum": 2048, "step": 8}),
