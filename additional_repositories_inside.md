@@ -1,6 +1,6 @@
 # Additional repositories used in build:
 
-* Mandatory to install: 
+* Mandatory to install into [webui\repositories], self-installed in portable release:
 - https://github.com/salesforce/BLIP
 - https://github.com/lllyasviel/huggingface_guess
 - https://github.com/AUTOMATIC1111/stable-diffusion-webui-assets

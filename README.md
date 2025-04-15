@@ -11,6 +11,9 @@ Specific changes compared to official Forge WebUI:
 I tried to save native simple structure of Forge and add more features, which will work out-of-box, without additional setting them: 'just unpack, launch and work'.
 
 # Installing Forge
+***NOTE***
+***I'm supporting only Windows 10/11 PCs and only portable release.***
+***No any support for Mac/Linux and also, no support for Docker.***
 
 **Just use one-click installation package (with git and python included, rest will be downloaded at first start, including pytorch and all needed modules)**
 
