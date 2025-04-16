@@ -5,6 +5,7 @@
 - deleted non-needed code from webui-user.bat about four mandatory repos check/install
 - added Docker file for Docker run support
 - some changes in requirements_versions
+- reconfigured gitignore to prevent updating .bat files, memory_management and main_entry files
 
 #2025/04/14
 - enabled always show GPU Weights slider for SD/XL profiles (lowering weights helps while upscaling to great resolutions on LowRAM GPU)
