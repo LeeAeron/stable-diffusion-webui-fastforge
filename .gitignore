@@ -1,3 +1,5 @@
 __pycache__/
 extensions/sd-forge-cleaner/*
 *.bat
+modules_forge/main_entry.py
+backend/memory_management.py
