@@ -1,1 +1,3 @@
 __pycache__/
+extensions/sd-forge-cleaner/*
+*.bat

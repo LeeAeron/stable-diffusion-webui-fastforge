@@ -1,8 +1,10 @@
 #Changelog:
 
 #2025/04/16
-- added Google Blockly back to sources for install while first start
+- added some repositories back to sources for install while first start
 - deleted non-needed code from webui-user.bat about four mandatory repos check/install
+- added Docker file for Docker run support
+- some changes in requirements_versions
 
 #2025/04/14
 - enabled always show GPU Weights slider for SD/XL profiles (lowering weights helps while upscaling to great resolutions on LowRAM GPU)
