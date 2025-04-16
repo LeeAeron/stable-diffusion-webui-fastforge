@@ -13,15 +13,13 @@ I tried to save native simple structure of Forge and add more features, which wi
 # Installing Forge
 ***NOTE:***
 
-***- I'm supporting only Windows 10/11 PCs and only portable release.***
-
-***- No any support for Mac/Linux and also, no support for Docker.***
+***- I'm supporting only Windows 10/11 PCs.***
 
 **Just use one-click installation package (with git and python included, rest will be downloaded at first start, including pytorch and all needed modules)**
 
 [*** Download One-Click Package (CUDA 12.1 + Pytorch 2.3.1, will be downloaded at first time)***](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/releases/download/v1.01/stable-diffusion-webui-forge-custom-build_1.01.2025.04.11.7z)
 
-After you're downloaded archive, uncompress it, and use `update.bat` to update, and use `START.bat` to run.
+After you're downloaded archive, uncompress it, and use `update.bat` to update, and use `START.bat` to run. [3]
 
 In main menu you can see 9 steps:
 
@@ -40,7 +38,7 @@ Also, there's possibility to download rest most popular upscale models-script wi
 **NOTE: 
  - [1] For Redux you can use usual Flux models: NF4, fp8/fp16/Dev GGUF/Schnell/Schnell GGUF versions. For Canny, Depth and Fill you can use their fp8/fp16/Dev GGUF versions.
  - [2] 'Clear Always' clears memory with clearing GPU and RAM cache, that hepls to prevent memory overflow while changing between lot of models and while batch upscaling.
-
+ - [3] For Docker users: MAIN MENU available only when user start engine with webui-user.bat!
 [Changelog here](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/blob/main/CHANGELOG.md)
 
 [Additional repositories, used in build](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/blob/main/additional_repositories_inside.md)

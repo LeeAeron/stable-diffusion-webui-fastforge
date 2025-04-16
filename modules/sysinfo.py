@@ -24,6 +24,7 @@ environment_whitelist = {
     "CLIP_PACKAGE",
     "OPENCLIP_PACKAGE",
     "ASSETS_REPO",
+    "GOOGLE_BLOCKLY_REPO",
     "STABLE_DIFFUSION_REPO",
     "K_DIFFUSION_REPO",
     "BLIP_REPO",

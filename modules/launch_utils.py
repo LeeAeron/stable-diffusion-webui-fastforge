@@ -404,6 +404,7 @@ def prepare_environment():
     # k_diffusion_commit_hash = os.environ.get('K_DIFFUSION_COMMIT_HASH', "ab527a9a6d347f364e3d185ba6d714e22d80cb3c")
     huggingface_guess_commit_hash = os.environ.get('HUGGINGFACE_GUESS_HASH', "84826248b49bb7ca754c73293299c4d4e23a548d")
     blip_commit_hash = os.environ.get('BLIP_COMMIT_HASH', "48211a1594f1321b00f14c9f7a5b4813144b2fb9")
+    google_blockly_hash = os.environ.get('GOOGLE_BLOCKLY_HASH', "1e98997c7fedaf5106af9849b6f50ebe5c4408f1")
 
     try:
         # the existence of this file is a signal to webui.sh/bat that webui needs to be restarted when it stops execution
@@ -464,6 +465,7 @@ def prepare_environment():
     # git_clone(k_diffusion_repo, repo_dir('k-diffusion'), "K-diffusion", k_diffusion_commit_hash)
     git_clone(huggingface_guess_repo, repo_dir('huggingface_guess'), "huggingface_guess", huggingface_guess_commit_hash)
     git_clone(blip_repo, repo_dir('BLIP'), "BLIP", blip_commit_hash)
+    git_clone(google_blockly_repo, repo_dir('google_blockly_prototypes'), "google_blockly_prototypes", google_blockly_hash)
 
     startup_timer.record("clone repositores")
 

@@ -826,46 +826,6 @@ goto memory_managmnt_prfl
 :start_forge
 cls
 echo Starting engine...
-echo Checking and installing additional repositories...
-set FILE_TO_CHECK=repositories\BLIP\requirements.txt
-set CLONE_FOLDER=repositories\BLIP
-set REPO_URL=https://github.com/salesforce/BLIP.git
-if exist "%FILE_TO_CHECK%" (
-    echo Repo ok.
-) else (
-    echo Repo does not exist. Cloning repository...
-    git clone %REPO_URL% "%CLONE_FOLDER%"
-)
-
-set FILE_TO_CHECK=repositories\google_blockly_prototypes\forge\additional_samplers.pyz
-set CLONE_FOLDER=repositories\google_blockly_prototypes
-set REPO_URL=https://github.com/lllyasviel/google_blockly_prototypes.git
-if exist "%FILE_TO_CHECK%" (
-    echo Repo ok.
-) else (
-    echo Repo does not exist. Cloning repository...
-    git clone %REPO_URL% "%CLONE_FOLDER%"
-)
-
-set FILE_TO_CHECK=repositories\huggingface_guess\huggingface_guess\model_list.py
-set CLONE_FOLDER=repositories\huggingface_guess
-set REPO_URL=https://github.com/lllyasviel/huggingface_guess.git
-if exist "%FILE_TO_CHECK%" (
-    echo Repo ok.
-) else (
-    echo Repo does not exist. Cloning repository...
-    git clone %REPO_URL% "%CLONE_FOLDER%"
-)
-
-set FILE_TO_CHECK=repositories\stable-diffusion-webui-assets\css\sourcesanspro.css
-set CLONE_FOLDER=repositories\stable-diffusion-webui-assets
-set REPO_URL=https://github.com/AUTOMATIC1111/stable-diffusion-webui-assets.git
-if exist "%FILE_TO_CHECK%" (
-    echo Repo ok.
-) else (
-    echo Repo does not exist. Cloning repository...
-    git clone %REPO_URL% "%CLONE_FOLDER%"
-)
 
 set "HF_HOME=%cd%\.huggingface"
 set "HF_HOME=%cd%_cache\huggingface"
