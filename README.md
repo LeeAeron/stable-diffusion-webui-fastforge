@@ -39,6 +39,7 @@ Also, there's possibility to download rest most popular upscale models-script wi
  - [1] For Redux you can use usual Flux models: NF4, fp8/fp16/Dev GGUF/Schnell/Schnell GGUF versions. For Canny, Depth and Fill you can use their fp8/fp16/Dev GGUF versions.
  - [2] 'Clear Always' clears memory with clearing GPU and RAM cache, that hepls to prevent memory overflow while changing between lot of models and while batch upscaling.
  - [3] For Docker users: MAIN MENU available only when user start engine with webui-user.bat!
+ 
 [Changelog here](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/blob/main/CHANGELOG.md)
 
 [Additional repositories, used in build](https://github.com/LeeAeron/stable-diffusion-webui-fastforge/blob/main/additional_repositories_inside.md)
