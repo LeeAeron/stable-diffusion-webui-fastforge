@@ -3,3 +3,6 @@ extensions/sd-forge-cleaner/*
 *.bat
 modules_forge/main_entry.py
 backend/memory_management.py
+ui-config.json
+params.txt
+config.json
