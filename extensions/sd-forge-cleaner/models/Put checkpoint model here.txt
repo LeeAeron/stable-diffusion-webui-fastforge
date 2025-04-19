@@ -1,2 +1,0 @@
-If model does not download automatically.
-download from this URL :  https://huggingface.co/anyisalin/big-lama/resolve/main/big-lama.safetensors
