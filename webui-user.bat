@@ -573,7 +573,7 @@ echo ==========================================
 echo   Facebook Prompt Offline Translate Model
 echo ==========================================
 echo 1. Download and install Facebook offline model (1.3Gb)
-echo 2. Dwonload Facebook offline model via Browser
+echo 2. Download Facebook offline model via Browser
 echo 3. Back to main menu
 echo ===========================
 set /p file_choice=Choose action 1-3: 
