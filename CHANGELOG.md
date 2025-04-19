@@ -1,5 +1,9 @@
 #Changelog:
 
+#2025/04/19
+- some lexic fixes in main menu (webui-user.bat)
+- deleted Cleaner extension from sources, available now only inportable build)
+
 #2025/04/16
 - added some repositories back to sources for install while first start
 - deleted non-needed code from webui-user.bat about four mandatory repos check/install
