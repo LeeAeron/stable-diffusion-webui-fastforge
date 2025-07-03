@@ -1,8 +1,22 @@
 #Changelog:
 
 #2025/07/03
+- added separate cuda stream for live preview VAE (ported commit)
+- added line to update sampling ste (ported commit)
+- added support wd_on_output for DoRA (ported commit)
+- added BF16 to GGUF (ported commit)
+- resolve warnings of datetime library (ported commit)
+- repair ancestral sampling for FLUX (ported commit)
+- added Chroma (ported commit)
+- added multithreading softinpainting (ported commit)
+- added support for fp8 scaled (ported commit)
+- fixed SD upscale Batch count (ported commit)
 - added Block Cache and TeaCache extension
 - added Flux Kontext extension
+- set by default Clear ALways for RAM Management
+- set by default VRAM-2Gb Async+CPU profile
+- added Download/Install Flux.D Kontext fp8/fp16/GGUF entries into BAT-manu (for portable version)
+- re-worked FLux.D Text Encode clips download menu, added fp8 CLIP, also pointed fp16 clip
 
 #2025/05/08
 - inpaint resolution (for Flux mainly) reduced to 768x768, it will brings generation speedup x2.5 without Flux inpaint quality loss by my tests

@@ -8,11 +8,12 @@ echo 1. Start Forge SD
 echo 2. Check and download upscale models
 echo 3. Check and download additional adetailer models
 echo 4. Download Flux.1 Dev NF4 v2 model
-echo 5. Download Flux.1 Dev VAE and Encoders (CLIP)
-echo 6. Download Flux.D models for Flux ControlNet
-echo 7. Download model for Prompt Translate
-echo 8. Change RAM optimizations profile
-echo 9. Change Memory Clear profile
+echo 5. Download Flux.1 Kontext models
+echo 6. Download Flux.1 Dev VAE and Encoders (CLIP)
+echo 7. Download Flux.1 models for Flux ControlNet
+echo 8. Download model for Prompt Translate
+echo 9. Change RAM optimizations profile
+echo 10. Change Memory Clear profile
 echo =============================================================
 echo Forked, modified by @li_aeron
 echo https://github.com/LeeAeron/stable-diffusion-webui-fastforge
@@ -22,11 +23,12 @@ if "%choice%"=="1" goto start_forge
 if "%choice%"=="2" goto check_and_install_upscale_models
 if "%choice%"=="3" goto check_and_install_adetailer_models
 if "%choice%"=="4" goto download_fluxd_nf4_mn
-if "%choice%"=="5" goto download_fluxd_vae_menu
-if "%choice%"=="6" goto menu_controlnet
-if "%choice%"=="7" goto menu_offline_transl
-if "%choice%"=="8" goto ram_opt
-if "%choice%"=="9" goto memory_managmnt_prfl
+if "%choice%"=="5" goto download_fluxd_kontext
+if "%choice%"=="6" goto download_fluxd_vae_menu
+if "%choice%"=="7" goto menu_controlnet
+if "%choice%"=="8" goto menu_offline_transl
+if "%choice%"=="9" goto ram_opt
+if "%choice%"=="10" goto memory_managmnt_prfl
 echo Wrong choice. Please, try again.
 pause
 goto main_menu
@@ -296,6 +298,93 @@ start "" "%url%"
 pause
 goto download_fluxd_nf4_mn
 
+:download_fluxd_kontext
+cls
+echo =============================
+echo      Flux.1 Kontext Models
+echo =============================
+echo 1. Download Flux.1 Kontext fp16 via (23Gb)
+echo 2. Download Flux.1 Kontext fp8 e4m3fn (11Gb)
+echo 3. Download Flux.1 Kontext fp8 e5m2 (11Gb)
+echo 4. Download Flux.1 Kontext GGUF models (choose) via Browser
+echo 5. Back
+echo =============================
+set /p file_choice=Choose action 1-5: 
+if "%file_choice%"=="1" goto download_fluxd_kontext_fp16
+if "%file_choice%"=="2" goto download_fluxd_kontext_fp8_e4m3fn
+if "%file_choice%"=="3" goto download_fluxd_kontext_fp8_e5m2
+if "%file_choice%"=="4" goto download_fluxd_kontext_gguf
+if "%file_choice%"=="5" goto main_menu
+echo Wrong choice. please, try again.
+pause
+goto download_fluxd_kontext
+
+:download_fluxd_kontext_fp16
+cls
+set "file_name=flux1-kontext-dev.safetensors"
+set "url=https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/flux1-kontext-dev.safetensors"
+set "folder_path=.\models\Stable-diffusion"
+set "download_folder=models\Stable-diffusion"
+if not exist "%folder_path%" (
+    mkdir "%folder_path%"
+)
+if not exist "%folder_path%\%file_name%" (
+    echo Flux.1 Kontext fp16 model %file_name% absent. Starting download...
+    aria2c -d "%download_folder%" -o "flux1-kontext-dev.safetensors" "%url%"
+    echo Flux.1 Kontext fp16 model %file_name% succesfully downloaded.
+) else (
+echo OK.
+)
+pause
+goto download_fluxd_kontext
+
+:download_fluxd_kontext_fp8_e4m3fn
+cls
+set "file_name=FLUX.D_Kontext_fp8_e4m3fn.safetensors"
+set "url=https://huggingface.co/datasets/LeeAeron/FluxKontext/resolve/main/FLUX.D_Kontext_fp8_e4m3fn.safetensors"
+set "folder_path=.\models\Stable-diffusion"
+set "download_folder=models\Stable-diffusion"
+if not exist "%folder_path%" (
+    mkdir "%folder_path%"
+)
+if not exist "%folder_path%\%file_name%" (
+    echo Flux.1 Kontext fp8 e4m3fn model %file_name% absent. Starting download...
+    aria2c -d "%download_folder%" -o "FLUX.D_Kontext_fp8_e4m3fn.safetensors" "%url%"
+    echo Flux.1 Kontext fp8 e4m3fn model %file_name% succesfully downloaded.
+) else (
+echo OK.
+)
+pause
+goto download_fluxd_kontext
+
+:download_fluxd_kontext_fp8_e5m2
+cls
+set "file_name=FLUX.D_Kontext_fp8_e5m2.safetensors"
+set "url=https://huggingface.co/datasets/LeeAeron/FluxKontext/resolve/main/FLUX.D_Kontext_fp8_e5m2.safetensors"
+set "folder_path=.\models\Stable-diffusion"
+set "download_folder=models\Stable-diffusion"
+if not exist "%folder_path%" (
+    mkdir "%folder_path%"
+)
+if not exist "%folder_path%\%file_name%" (
+    echo Flux.1 Kontext fp8 e5m2 model %file_name% absent. Starting download...
+    aria2c -d "%download_folder%" -o "FLUX.D_Kontext_fp8_e5m2.safetensors" "%url%"
+    echo Flux.1 Kontext fp8 e5m2 model %file_name% succesfully downloaded.
+) else (
+echo OK.
+)
+pause
+goto download_fluxd_kontext
+
+:download_fluxd_kontext_gguf
+cls
+echo Opening Flux.1 Kontext GGUF models folder in Browser...
+set "url=https://huggingface.co/QuantStack/FLUX.1-Kontext-dev-GGUF/tree/main"
+start "" "%url%"
+)
+pause
+goto download_fluxd_kontext
+
 :download_fluxd_vae_menu
 cls
 echo ==================================
@@ -304,15 +393,17 @@ echo ==================================
 echo 1. Download Flux.1 Dev VAE (319Mb)
 echo 2. Download Flux.1 Dev CLIP I (234Mb)
 echo 3. Download Flux.1 Dev CLIP I Detailed (888Mb)
-echo 4. Download Flux.1 Dev CLIP II Detailed (9.11Gb)
-echo 5. Open HugginFace folder in Browser
-echo 6. Back
+echo 4. Download Flux.1 Dev CLIP II (fp8) (4.56Gb)
+echo 5. Download Flux.1 Dev CLIP II (fp16) (9.11Gb)
+echo 6. Open HugginFace folder in Browser
+echo 7. Back
 echo ==================================
 set /p file_choice=Choose action 1-6: 
 if "%file_choice%"=="1" goto download_vae
 if "%file_choice%"=="2" goto download_clip1
 if "%file_choice%"=="3" goto download_clip1_detaled
-if "%file_choice%"=="4" goto download_clip2
+if "%file_choice%"=="4" goto download_clip2_fp8
+if "%file_choice%"=="4" goto download_clip2_fp16
 if "%file_choice%"=="5" goto download_vae_browser
 if "%file_choice%"=="6" goto main_menu
 echo Wrong choice. please, try again.
@@ -348,9 +439,9 @@ if not exist "%folder_path%" (
     mkdir "%folder_path%"
 )
 if not exist "%folder_path%\%file_name%" (
-    echo FLUX.I model %file_name% absent. Starting download...
+    echo FLUX.I Text Encoder model %file_name% absent. Starting download...
     aria2c -d "%download_folder%" -o "FLUX.I.safetensors" "%url%"
-    echo FLUX.I model %file_name% succesfully downloaded.
+    echo FLUX.I Text Encoder model %file_name% succesfully downloaded.
 ) else (
 echo OK.
 )
@@ -367,28 +458,47 @@ if not exist "%folder_path%" (
     mkdir "%folder_path%"
 )
 if not exist "%folder_path%\%file_name%" (
-    echo FLUX.I.Detailed model %file_name% absent. Starting download...
+    echo FLUX.I.Detailed Text Encoder model %file_name% absent. Starting download...
     aria2c -d "%download_folder%" -o "FLUX.I.Detailed.safetensors" "%url%"
-    echo FLUX.I.Detailed model %file_name% succesfully downloaded.
+    echo FLUX.I.Detailed Text Encoder model %file_name% succesfully downloaded.
 ) else (
 echo OK.
 )
 pause
 goto download_fluxd_vae_menu
 
-:download_clip2
+:download_clip2_fp8
 cls
-set "file_name=FLUX.II.safetensors"
-set "url=https://huggingface.co/datasets/LeeAeron/flux_vae_encoders/resolve/main/FLUX.II.safetensors?download=true"
+set "file_name=FLUX.II.fp8.safetensors"
+set "url=https://huggingface.co/datasets/LeeAeron/flux_vae_encoders/resolve/main/FLUX.II.fp8.safetensors?download=true"
 set "folder_path=.\models\text_encoder"
 set "download_folder=models\text_encoder"
 if not exist "%folder_path%" (
     mkdir "%folder_path%"
 )
 if not exist "%folder_path%\%file_name%" (
-    echo FLUX.II model %file_name% absent. Starting download...
+    echo FLUX.II Text Encoder fp8 model %file_name% absent. Starting download...
+    aria2c -d "%download_folder%" -o "FLUX.II.fp8.safetensors" "%url%"
+    echo FLUX.II Text Encoder fp8 model %file_name% succesfully downloaded.
+) else (
+echo OK.
+)
+pause
+goto download_fluxd_vae_menu
+
+:download_clip2_fp16
+cls
+set "file_name=FLUX.II.safetensors"
+set "url=https://huggingface.co/datasets/LeeAeron/flux_vae_encoders/resolve/main/FLUX.II.fp16.safetensors?download=true"
+set "folder_path=.\models\text_encoder"
+set "download_folder=models\text_encoder"
+if not exist "%folder_path%" (
+    mkdir "%folder_path%"
+)
+if not exist "%folder_path%\%file_name%" (
+    echo FLUX.II Text Encoder fp16 model %file_name% absent. Starting download...
     aria2c -d "%download_folder%" -o "FLUX.II.safetensors" "%url%"
-    echo FLUX.II model %file_name% succesfully downloaded.
+    echo FLUX.II Text Encoder fp16 model %file_name% succesfully downloaded.
 ) else (
 echo OK.
 )
@@ -844,28 +954,14 @@ set COMMANDLINE_ARGS=--skip-python-version-check ^
 --precision half ^
 --no-hashing ^
 --upcast-sampling ^
---disable-nan-check
-
-@REM UNCOMMENT FOLOWWING CODE (REPLACE COMMANDLINE_ARGS LINE WITH UNCOMMENTED CODE)AND SETUP EXTERNAL PATH FOR MODELS IF YOU HAVE THEM NOT INTERNALLY.
-@REM set COMMANDLINE_ARGS=--skip-python-version-check ^
-@REM --skip-version-check ^
-@REM --skip-torch-cuda-test ^
-@REM --xformers ^
-@REM --cuda-stream ^
-@REM --cuda-malloc ^
-@REM --no-half-vae ^
-@REM --precision half ^
-@REM --no-hashing ^
-@REM --upcast-sampling ^
-@REM --disable-nan-check
-@REM --ckpt-dir D:/COMFY_UI/ComfyUI/models/checkpoints ^
-@REM --lora-dir D:/COMFY_UI/ComfyUI/models/loras ^
-@REM --vae-dir D:/COMFY_UI/ComfyUI/models/vae ^
-@REM --text-encoder-dir D:/COMFY_UI/ComfyUI/models/text_encoders ^
-@REM --embeddings-dir D:/COMFY_UI/ComfyUI/models/embeddings ^
-@REM --hypernetwork-dir D:/COMFY_UI/ComfyUI/models/hypernetworks ^
-@REM --controlnet-dir D:/COMFY_UI/ComfyUI/models/controlnet
-
+--disable-nan-check ^
+--ckpt-dir D:/COMFY_UI/ComfyUI/models/checkpoints ^
+--lora-dir D:/COMFY_UI/ComfyUI/models/loras ^
+--vae-dir D:/COMFY_UI/ComfyUI/models/vae ^
+--text-encoder-dir D:/COMFY_UI/ComfyUI/models/text_encoders ^
+--embeddings-dir D:/COMFY_UI/ComfyUI/models/embeddings ^
+--hypernetwork-dir D:/COMFY_UI/ComfyUI/models/hypernetworks ^
+--controlnet-dir D:/COMFY_UI/ComfyUI/models/controlnet
 set EXPORT COMMANDLINE_ARGS=
 
 @REM Uncomment following code to reference an existing A1111 checkout.

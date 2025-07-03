@@ -4,7 +4,7 @@ Custom build, optimized for performance.
 Specific changes compared to official Forge WebUI:
 - optimized for max performance on all systems, especially with low VRAM
 - added main .bat menu with additional options to change memory management profile, installing some models etc.
-- pre-installed and pre-configured useful extensions, including FluxTools v2, which work 'out-of-box'
+- pre-installed and pre-configured useful extensions, including FluxTools v2, which work 'out-of-box' and Flux.1 Kontext
 - re-configured main configs and settings
 - no memory overflow
 
@@ -49,7 +49,9 @@ Also, there's possibility to download rest most popular upscale models-script wi
 - Flux.1 Dev fp8: https://huggingface.co/datasets/LeeAeron/flux_controlnet
 - Flux.1 Dev VAE, CLIPS: https://huggingface.co/datasets/LeeAeron/flux_vae_encoders
 - Facebook offline translate model: https://huggingface.co/datasets/LeeAeron/offline_translate_model
-
+- Flux.1 Dev Kontext fp16: https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/tree/main
+- Flux.1 Dev Kontext fp8: https://huggingface.co/6chan/flux1-kontext-dev-fp8/tree/main
+- Flux.1 Dev Kontext GGUF: https://huggingface.co/QuantStack/FLUX.1-Kontext-dev-GGUF
 
 # FluxTools v2 for Dummies:
 
@@ -58,3 +60,9 @@ Also, there's possibility to download rest most popular upscale models-script wi
 Thanks for FluxTools v2 extension to https://github.com/AcademiaSD
 
 Readme file, also changelog will be updated, and extended.
+
+
+# Flux Kontext for Dummies:
+
+[![Video Title](https://img.youtube.com/vi/q81hhceZIGA/0.jpg)](https://www.youtube.com/watch?v=q81hhceZIGA)
+
