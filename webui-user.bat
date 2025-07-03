@@ -954,14 +954,28 @@ set COMMANDLINE_ARGS=--skip-python-version-check ^
 --precision half ^
 --no-hashing ^
 --upcast-sampling ^
---disable-nan-check ^
---ckpt-dir D:/COMFY_UI/ComfyUI/models/checkpoints ^
---lora-dir D:/COMFY_UI/ComfyUI/models/loras ^
---vae-dir D:/COMFY_UI/ComfyUI/models/vae ^
---text-encoder-dir D:/COMFY_UI/ComfyUI/models/text_encoders ^
---embeddings-dir D:/COMFY_UI/ComfyUI/models/embeddings ^
---hypernetwork-dir D:/COMFY_UI/ComfyUI/models/hypernetworks ^
---controlnet-dir D:/COMFY_UI/ComfyUI/models/controlnet
+--disable-nan-check
+
+@REM UNCOMMENT FOLOWWING CODE (REPLACE COMMANDLINE_ARGS LINE WITH UNCOMMENTED CODE)AND SETUP EXTERNAL PATH FOR MODELS IF YOU HAVE THEM NOT INTERNALLY.
+@REM set COMMANDLINE_ARGS=--skip-python-version-check ^
+@REM --skip-version-check ^
+@REM --skip-torch-cuda-test ^
+@REM --xformers ^
+@REM --cuda-stream ^
+@REM --cuda-malloc ^
+@REM --no-half-vae ^
+@REM --precision half ^
+@REM --no-hashing ^
+@REM --upcast-sampling ^
+@REM --disable-nan-check
+@REM --ckpt-dir D:/COMFY_UI/ComfyUI/models/checkpoints ^
+@REM --lora-dir D:/COMFY_UI/ComfyUI/models/loras ^
+@REM --vae-dir D:/COMFY_UI/ComfyUI/models/vae ^
+@REM --text-encoder-dir D:/COMFY_UI/ComfyUI/models/text_encoders ^
+@REM --embeddings-dir D:/COMFY_UI/ComfyUI/models/embeddings ^
+@REM --hypernetwork-dir D:/COMFY_UI/ComfyUI/models/hypernetworks ^
+@REM --controlnet-dir D:/COMFY_UI/ComfyUI/models/controlnet
+
 set EXPORT COMMANDLINE_ARGS=
 
 @REM Uncomment following code to reference an existing A1111 checkout.
