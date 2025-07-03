@@ -18,7 +18,7 @@ echo =============================================================
 echo Forked, modified by @li_aeron
 echo https://github.com/LeeAeron/stable-diffusion-webui-fastforge
 echo =============================================================
-set /p choice=Choose action 1-9:
+set /p choice=Choose action 1-10:
 if "%choice%"=="1" goto start_forge
 if "%choice%"=="2" goto check_and_install_upscale_models
 if "%choice%"=="3" goto check_and_install_adetailer_models
