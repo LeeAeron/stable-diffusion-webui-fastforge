@@ -28,3 +28,5 @@
 - https://github.com/licyk/sd-webui-tcd-sampler
 - https://github.com/brick2face/seamless-tile-inpainting
 - https://github.com/DenOfEquity/superPrompter-webUI
+- https://github.com/DenOfEquity/sd-forge-blockcache
+- https://github.com/DenOfEquity/forge2_flux_kontext

@@ -1,12 +1,16 @@
 #Changelog:
 
+#2025/07/03
+- added Block Cache and TeaCache extension
+- added Flux Kontext extension
+
 #2025/05/08
 - inpaint resolution (for Flux mainly) reduced to 768x768, it will brings generation speedup x2.5 without Flux inpaint quality loss by my tests
 - changed resolution for SDXL by default
 
 #2025/04/19
 - some lexic fixes in main menu (webui-user.bat)
-- deleted Cleaner extension from sources, available now only inportable build)
+- deleted Cleaner extension from sources, available now only in portable build)
 
 #2025/04/16
 - added some repositories back to sources for install while first start
