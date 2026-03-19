@@ -982,7 +982,7 @@ cls
 call run_rtx50.bat
 
 :update_fastforge
-call "%~dp0..\environment.bat"
+call ../environment.bat
 
 for /f "tokens=*" %%i in ('git rev-parse --abbrev-ref HEAD') do set CURRENT_BRANCH=%%i
 git fetch origin
