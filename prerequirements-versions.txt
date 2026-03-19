@@ -1,9 +1,16 @@
-packaging-25.0-py3-none-any.whl
-setuptools-69.5.1-py3-none-any.whl
+packaging==25.0
+setuptools==69.5.1
+
+# PyTorch stack (stable CUDA 12.8)
+xformers==0.0.32.post1
+
+# Gradio stack
 gradio==4.40.0
 gradio_client==1.2.0
 gradio_imageslider==0.0.20
 gradio_rangeslider==0.0.6
+
+# Scientific stack
 opencv-python-headless==4.11.0.86
 llvmlite==0.44.0
 scipy==1.16.1
