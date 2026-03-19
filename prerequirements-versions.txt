@@ -1,11 +1,10 @@
-packaging-23.2-py3-none-any.whl
+packaging-25.0-py3-none-any.whl
 setuptools-69.5.1-py3-none-any.whl
 gradio==4.40.0
 gradio_client==1.2.0
 gradio_imageslider==0.0.20
 gradio_rangeslider==0.0.6
-opencv-python-headless==4.10.0.84
-llvmlite==0.42.0
-scipy==1.12.0
-pandas==2.2.0
-embreex==2.17.7
+opencv-python-headless==4.11.0.86
+llvmlite==0.44.0
+scipy==1.16.1
+pandas==2.3.1

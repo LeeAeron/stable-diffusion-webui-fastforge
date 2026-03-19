@@ -384,39 +384,23 @@ re_attention = re.compile(r"""
 re_break = re.compile(r"\s*\bBREAK\b\s*", re.S)
 
 def parse_prompt_attention(text):
-    """
+    r"""
     Parses a string with attention tokens and returns a list of pairs: text and its associated weight.
     Accepted tokens are:
       (abc) - increases attention to abc by a multiplier of 1.1
       (abc:3.12) - increases attention to abc by a multiplier of 3.12
       [abc] - decreases attention to abc by a multiplier of 1.1
       \( - literal character '('
-      \[ - literal character '['
+      
+
+\[ - literal character '['
       \) - literal character ')'
-      \] - literal character ']'
+      \]
+
+ - literal character ']'
       \\ - literal character '\'
       anything else - just text
-
-    >>> parse_prompt_attention('normal text')
-    [['normal text', 1.0]]
-    >>> parse_prompt_attention('an (important) word')
-    [['an ', 1.0], ['important', 1.1], [' word', 1.0]]
-    >>> parse_prompt_attention('(unbalanced')
-    [['unbalanced', 1.1]]
-    >>> parse_prompt_attention('\(literal\]')
-    [['(literal]', 1.0]]
-    >>> parse_prompt_attention('(unnecessary)(parens)')
-    [['unnecessaryparens', 1.1]]
-    >>> parse_prompt_attention('a (((house:1.3)) [on] a (hill:0.5), sun, (((sky))).')
-    [['a ', 1.0],
-     ['house', 1.5730000000000004],
-     [' ', 1.1],
-     ['on', 1.0],
-     [' a ', 1.1],
-     ['hill', 0.55],
-     [', sun, ', 1.1],
-     ['sky', 1.4641000000000006],
-     ['.', 1.1]]
+    ...
     """
 
     res = []

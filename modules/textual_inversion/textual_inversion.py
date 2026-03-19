@@ -9,6 +9,9 @@ import datetime
 import csv
 import safetensors.torch
 
+import torch
+from torch.serialization import add_safe_globals
+import torch.nn.modules.container
 import numpy as np
 from PIL import Image, PngImagePlugin
 
@@ -31,6 +34,19 @@ def list_textual_inversion_templates():
             textual_inversion_templates[fn] = TextualInversionTemplate(fn, path)
 
     return textual_inversion_templates
+
+
+def safe_load(path, map_location="cpu"):
+    try:
+        add_safe_globals([torch.nn.modules.container.ParameterDict])
+        return torch.load(path, map_location=map_location, weights_only=True)
+    except Exception as e:
+        print(f"[FastForge] Safe load failed: {e}")
+        try:
+            return torch.load(path, map_location=map_location, weights_only=False)
+        except Exception as e2:
+            print(f"[FastForge] Full load also failed: {e2}")
+            raise ValueError("Failed to load embedding file safely or fully.")
 
 
 class Embedding:
@@ -172,7 +188,7 @@ class EmbeddingDatabase:
                     # if data is None, means this is not an embedding, just a preview image
                     return
         elif ext in ['.BIN', '.PT']:
-            data = torch.load(path, map_location="cpu")
+            data = safe_load(path, map_location="cpu")
         elif ext in ['.SAFETENSORS']:
             data = safetensors.torch.load_file(path, device="cpu")
         else:

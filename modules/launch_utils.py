@@ -387,8 +387,8 @@ import subprocess
 def prepare_environment():
     torch_command = [
         "uv", "pip", "install",
-        "torch==2.3.1", "torchvision==0.18.1", "torchaudio", "xformers==0.0.27",
-        "--extra-index-url", "https://download.pytorch.org/whl/cu121",
+        "torch", "torchvision", "torchaudio", "xformers==0.0.31.post1",
+        "--extra-index-url", "https://download.pytorch.org/whl/cu128",
         "--system"
     ]
     triton_command = [
@@ -399,7 +399,7 @@ def prepare_environment():
 
     requirements_file = os.environ.get('REQS_FILE', "requirements_versions.txt")
 
-    xformers_package = os.environ.get('XFORMERS_PACKAGE', 'xformers==0.0.27')
+    xformers_package = os.environ.get('XFORMERS_PACKAGE', 'xformers==0.0.31.post1')
     clip_package = os.environ.get('CLIP_PACKAGE', "https://github.com/openai/CLIP/archive/d50d76daa670286dd6cacf3bcd80b5e4823fc8e1.zip")
     openclip_package = os.environ.get('OPENCLIP_PACKAGE', "https://github.com/mlfoundations/open_clip/archive/bb6e834e9c70d9c27d0dc3ecedeebeaeb1ffad6b.zip")
 
@@ -445,9 +445,9 @@ def prepare_environment():
 
     run_extensions_installers(settings_file=args.ui_settings_file)
 
-    ensure_numpy_version("1.26.2")
+    ensure_numpy_version("1.26.4")
 
-    ensure_protobuf_version("3.20.0")
+    ensure_protobuf_version("3.20.3")
 
     if "--exit" in sys.argv:
         print("Exiting because of --exit argument")
@@ -465,7 +465,7 @@ def get_installed_numpy_version():
         return None
 
 
-def ensure_numpy_version(target_version="1.26.2"):
+def ensure_numpy_version(target_version="1.26.4"):
     installed_version = get_installed_numpy_version()
     if installed_version == target_version:
         return
@@ -493,7 +493,7 @@ def get_installed_protobuf_version():
         return None
 
 
-def ensure_protobuf_version(target_version="3.20.0"):
+def ensure_protobuf_version(target_version="3.20.3"):
     installed_version = get_installed_protobuf_version()
     if installed_version == target_version:
         return
