@@ -982,14 +982,13 @@ cls
 call run_rtx50.bat
 
 :update_fastforge
-call "%~dp0..\environment.bat"
+call ../environment.bat
 
-git -C "%~dp0" pull 2>NUL
-if %ERRORLEVEL% == 0 goto :done
+for /f "tokens=*" %%i in ('git rev-parse --abbrev-ref HEAD') do set CURRENT_BRANCH=%%i
+git fetch origin
+git reset --hard origin/%CURRENT_BRANCH%
 
-git -C "%~dp0" reset --hard
-git -C "%~dp0" pull
-
-:done
+echo [INFO] Update finished.
 pause
 goto main_menu
+

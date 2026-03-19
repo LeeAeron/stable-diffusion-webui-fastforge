@@ -430,7 +430,7 @@
     "composite_tiles_on_gpu": true,
     "upscaler_for_img2img": "None",
     "lora_computation_strategy": "Autocast",
-    "flux_tiling_mode": "tiled",
+    "flux_tiling_mode": "normal",
     "flux_tile_size": 512,
     "flux_tile_overlap": 128
 }
