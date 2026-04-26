@@ -417,20 +417,35 @@ def prepare_environment():
     print(f"Version: {tag}")
     print(f"Commit hash: {commit}")
 
+    # CHECK INTERNET BEFORE ALL INSTALLS
+    internet_available = has_internet()
+
     if not is_installed("clip"):
-        run_pip(f"install {clip_package}", "clip")
-        startup_timer.record("install clip")
+        if internet_available:
+            run_pip(f"install {clip_package}", "clip")
+            startup_timer.record("install clip")
+        else:
+            print("! No internet access. Skipping clip installation.")
 
     if not is_installed("open_clip"):
-        run_pip(f"install {openclip_package}", "open_clip")
-        startup_timer.record("install open_clip")
+        if internet_available:
+            run_pip(f"install {openclip_package}", "open_clip")
+            startup_timer.record("install open_clip")
+        else:
+            print("! No internet access. Skipping open_clip installation.")
 
     if (not is_installed("xformers")):
-        run_pip(f"install -U -I --no-deps {xformers_package}", "xformers")
-        startup_timer.record("install xformers")
+        if internet_available:
+            run_pip(f"install -U -I --no-deps {xformers_package}", "xformers")
+            startup_timer.record("install xformers")
+        else:
+            print("! No internet access. Skipping xformers installation.")
 
     if args.triton:
-        subprocess.run(triton_command, check=True)
+        if internet_available:
+            subprocess.run(triton_command, check=True)
+        else:
+            print("! No internet access. Skipping triton installation.")
 
     os.makedirs(os.path.join(script_path, dir_repos), exist_ok=True)
 
@@ -440,8 +455,11 @@ def prepare_environment():
         requirements_file = os.path.join(script_path, requirements_file)
 
     if not requirements_met(requirements_file):
-        run_pip(f"install -r \"{requirements_file}\"", "requirements")
-        startup_timer.record("install requirements")
+        if internet_available:
+            run_pip(f"install -r \"{requirements_file}\"", "requirements")
+            startup_timer.record("install requirements")
+        else:
+            print("! No internet access. Requirements not met, but skipping installation.")
 
     run_extensions_installers(settings_file=args.ui_settings_file)
 
